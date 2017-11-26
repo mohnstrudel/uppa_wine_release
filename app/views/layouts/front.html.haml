@@ -1,0 +1,12 @@
+!!!
+%html
+  %head
+    =metamagic site: "Uppa Winery", title: [:site, :title], separator: ": ", description: @setting.description, keywords: [:keywords, "Uppa Wine", "Вино", "Российские вина", "Крымские вина"]
+    = csrf_meta_tags
+    = stylesheet_link_tag    'front', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'front', 'data-turbolinks-track': 'reload'
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+
+  %body{class: "#{controller_name} #{action_name}"}
+    =render_menu
+    =yield

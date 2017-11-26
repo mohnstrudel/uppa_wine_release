@@ -1,0 +1,92 @@
+-if object.respond_to?(:url)
+  .form-group
+    %label.col-sm-2.control-label Url
+    .col-sm-10
+      =f.text_field :url, class: 'form-control'
+      %span.help-block.m-b-none Site url (http://example.com)
+  .hr-line-dashed
+-if object.respond_to?(:logo)
+  .form-group
+    %label.col-sm-2.control-label Logo
+    .col-sm-8
+      .fileinput.fileinput-new.input-group{"data-provides" => "fileinput"}
+        .form-control{"data-trigger" => "fileinput"}
+          %i.glyphicon.glyphicon-file.fileinput-exists
+          %span.fileinput-filename
+        %span.input-group-addon.btn.btn-default.btn-file
+          %span.fileinput-new Select file
+          %span.fileinput-exists Change
+          =f.file_field :logo
+
+        %a.input-group-addon.btn.btn-default.fileinput-exists{"data-dismiss" => "fileinput", :href => "#"} Remove
+    .col-sm-2
+      -if object.logo.present?
+        =image_tag object.logo.url(:mini_thumb)
+  .hr-line-dashed
+
+-if object.respond_to?(:address)
+  .form-group
+    %label.col-sm-2.control-label Адрес магазина
+    .col-sm-10
+      =f.text_area :address, class: 'form-control', rows: 3
+      %span.help-block.m-b-none г. Москва, ул. Пржевальского 3/25
+  .hr-line-dashed
+
+-if object.respond_to?(:email)
+  .form-group
+    %label.col-sm-2.control-label Email
+    .col-sm-10
+      =f.text_field :email, class: 'form-control'
+      %span.help-block.m-b-none something@example.com
+  .hr-line-dashed
+
+-if object.respond_to?(:long)
+  .form-group
+    %label.col-sm-2.control-label Долгота
+    .col-sm-10
+      =f.number_field :long, class: 'form-control', step: :any
+      %span.help-block.m-b-none Для карты (например 52.1241423)
+  .hr-line-dashed
+
+-if object.respond_to?(:lat)
+  .form-group
+    %label.col-sm-2.control-label Широта
+    .col-sm-10
+      =f.number_field :lat, class: 'form-control', step: :any
+      %span.help-block.m-b-none Для карты (например 34.01923808)
+  .hr-line-dashed
+
+-if object.respond_to?(:facebook)
+  .form-group
+    %label.col-sm-2.control-label Facebook
+    .col-sm-10
+      =f.text_field :facebook, class: 'form-control'
+      %span.help-block.m-b-none Например - http://facebook.com/uppa_wine
+  .hr-line-dashed
+
+-if object.respond_to?(:vk)
+  .form-group
+    %label.col-sm-2.control-label vKontakte
+    .col-sm-10
+      =f.text_field :vk, class: 'form-control'
+      %span.help-block.m-b-none Например - http://vk.com/uppa_wine
+  .hr-line-dashed
+
+-if object.respond_to?(:instagram)
+  .form-group
+    %label.col-sm-2.control-label Instagram
+    .col-sm-10
+      =f.text_field :instagram, class: 'form-control'
+      %span.help-block.m-b-none Например - http://instagram.com/uppa_wine
+  .hr-line-dashed
+
+-if object.respond_to?(:opening_hours)
+  .form-group
+    %label.col-sm-2.control-label
+      Часы открытия
+    .col-sm-10
+      =f.fields_for :opening_hours do |hours_builder|
+        / =f.fields_for :opening_hours, OpenStruct.new(object.opening_hours) do |fields_builder|
+        =render partial: 'admin/shared/form/general_settings/opening_hours_fields', locals: { f: hours_builder }
+      %span.help-block.m-b-none
+        =link_to_add_fields "Добавить время открытия", f, :opening_hours, 'admin/shared/form/general_settings/opening_hours_fields', class: 'btn btn-default'

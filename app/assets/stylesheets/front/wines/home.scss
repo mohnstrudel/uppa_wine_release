@@ -1,0 +1,187 @@
+/* 18 есть? */
+
+.ageOuterWrapper {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
+    transition: opacity 300ms ease;
+
+    background-color: rgba(0, 0, 0, 0.6);
+
+    .ageContainer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+
+        width: 460px;
+        height: 300px;
+
+        background-color: #EEEDE7;
+
+        .theWords {
+            width: 412px;
+            height: 90px;
+            padding-top: 57px;
+
+            text-align: center;
+            letter-spacing: 0.5px;
+
+            color: #000000;
+
+            font-family: $serifFamily;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 30px;
+        }
+
+        a {
+            text-decoration: none;
+            .alreadyEighteen {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                width: 240px;
+                min-height: 55px;
+                margin-bottom: 60px;
+
+                cursor: pointer;
+                letter-spacing: 1.5px;
+                text-transform: uppercase;
+
+                color: #000000;
+                border: 1px solid #323232;
+
+                font-family: $sansFamily;
+                font-size: 10px;
+                font-weight: 700;
+                line-height: 15px;
+
+                .arrowSmallRight {
+                    width: 13px;
+                    height: 8px;
+                    margin-bottom: 3px;
+                    margin-left: 5px;
+
+                    background-image: asset-url('arrow/arrow_small_right.svg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+            }
+
+            .alreadyEighteen:hover {
+                animation: slowly 0.2s;
+
+                color: #EEEDE7;
+                background-color: #1A1A1A;
+
+                @keyframes slowly {
+                    0% {
+                        opacity: 0;
+                    }
+
+                    100% {
+                        opacity: 1;
+                    }
+                }
+            }
+
+            .alreadyEighteen:hover > .arrowSmallRight {
+                background-image: asset-url('arrow/arrow_small_right_white.svg');
+            }
+        }
+    }
+}
+
+/* есть, есть */
+
+.mainWrapper {
+    display: flex;
+
+    width: 100%;
+    height: 100%;
+
+    background-image: asset-url('posterimg_mobile.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mobileHelper {
+    display: none;
+}
+
+@media (max-width: 799px) {
+    .bgVideo {
+        display: none;
+    }
+}
+
+@media (min-width: 568px) and (orientation: landscape) {
+    .mainWrapper {
+        background-position: 0 15%;
+    }
+}
+
+@media (min-width: 800px) {
+    .mainWrapper {
+        transition: 300ms background-position ease;
+
+        background-image: asset-url('posterimg.jpeg');
+        background-position: 250px;
+    }
+    
+    .bgVideo {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    .mobileHelper {
+        display: inherit;
+    }
+
+    .mobileHelper ~ .mainWrapper {
+        background-position: 50px;
+        background-size: cover;
+    }
+}
+
+@media (min-width: 1000px) {
+    .mainWrapper {
+        background-image: asset-url('posterimg.jpeg');
+        background-position: 150px;
+    }
+
+    .mobileHelper ~ .mainWrapper {
+        background-position: 250px 0;
+        background-size: cover;
+    }
+}
+
+@media (min-width: 1200px) {
+    .mainWrapper {
+        background-image: asset-url('posterimg.jpeg');
+    }
+
+    .mobileHelper ~ .mainWrapper {
+        background-position: 300px 0;
+        background-size: cover;
+    }
+}

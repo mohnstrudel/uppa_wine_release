@@ -1,0 +1,303 @@
+.clubOuterWrapper {
+    
+    .clubInnerWrapper {
+        display: flex;
+        flex-flow: column nowrap;
+
+        width: 100%;
+        padding: 91px 25px 0;
+
+        background-color: #EEEDE7;
+
+        .toUppaClub {
+            display: none;
+
+            text-decoration: none;
+            text-transform: uppercase;
+
+            font-family: $sansFamily;
+            font-size: 10px;
+            color: #000000;
+            letter-spacing: 1px;
+            line-height: 13px;
+            font-weight: 700;
+
+            position: absolute;
+            top: -50px;
+            left: 110px;
+            padding-bottom: 1px;
+            border-bottom: 1px solid #000;
+        }
+
+        .headerCommon {
+            font-family: $serifFamily;
+            font-size: 28px;
+            color: #000000;
+            letter-spacing: 0.45px;
+            line-height: 30px;
+            font-weight: 400;
+
+            padding-bottom: 40px;
+        }
+
+        .descriptionCommon {
+            font-family: $sansFamily;
+            font-size: 14px;
+            color: #000000;
+            letter-spacing: 1.17px;
+            line-height: 20px;
+            font-weight: 400;
+        }
+
+        .grapeBerriesPicture {
+            background-image: asset-url('grape_berries_small.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            width: 100vw;
+            height: 191px;
+
+            margin-left: calc(-50vw + 50%);
+
+            margin-top: 40px;
+            margin-bottom: 42px;
+        }
+
+        ol {
+            padding-left: 15px;
+
+            li {
+                font-family: $sansFamily;
+                font-size: 14px;
+                color: #000000;
+                letter-spacing: 1.17px;
+                line-height: 20px;
+                font-weight: 400;
+
+                padding-left: 7px;
+            }
+        }
+
+        .titleCommon {
+            font-family: $sansFamily;
+            font-size: 10px;
+            color: #000000;
+            letter-spacing: 1.5px;
+            line-height: 15px;
+            font-weight: 700;
+
+            text-transform: uppercase;
+        }
+
+        .possibilities {
+            padding-bottom: 7px;
+        }
+
+        .welcomeToUppa {
+            padding-top: 38px;
+            padding-bottom: 42px;
+        }
+
+        a {
+            text-decoration: none;
+
+            .downloadForm {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                width: auto;
+                min-height: 55px;
+
+                cursor: pointer;
+                letter-spacing: 1.5px;
+                text-transform: uppercase;
+
+                color: #000000;
+                border: 1px solid #323232;
+
+                font-family: $sansFamily;
+                font-size: 10px;
+                font-weight: 700;
+                line-height: 15px;
+
+                .arrowSmallRight {
+                    width: 12px;
+                    height: 7px;
+                    margin-left: 5px;
+
+                    background-image: asset-url('arrow/arrow_small_right.svg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+            }
+            
+            .downloadForm:hover {
+                color: #EEEDE7;
+                background-color: #1A1A1A;
+                
+                animation: slowly 0.2s;
+
+                @keyframes slowly {
+                    0% {
+                        opacity: 0;
+                    }
+                }
+            }
+            
+            .downloadForm:hover > .arrowSmallRight {
+                background-image: asset-url('arrow/arrow_small_right_white.svg');
+            }
+        }
+
+        .footerClub {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            width: 100vw;
+            height: 45px;
+            margin-left: calc(-50vw + 50%);
+            padding: 0 25px;
+
+            letter-spacing: 0.75px;
+            font-family: $sansFamily;
+
+            color: #EEEDE7;
+            background-color: #323232;
+
+            font-size: 9px;
+            line-height: 12px;
+
+            margin-top: 60px;
+
+            a {
+                cursor: pointer;
+                text-decoration: none;
+
+                color: #EEEDE7;
+
+                border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            }
+        }
+    }
+}
+
+
+@media (min-width: 800px) {
+    .clubOuterWrapper {
+        display: flex;
+        flex-direction: row;
+
+        height: 100%;
+        padding-left: 50px;
+        
+        
+        .clubInnerWrapper {
+            min-width: 50%;
+            
+            padding-left: 60px;
+            padding-right: 60px;
+            padding-bottom: 45px;
+            
+            .headerCommon {
+                font-size: 34px;
+                color: #1A1A1A;
+                letter-spacing: 0.55px;
+                line-height: 41px;
+            }
+            
+            .descriptionCommon {
+                font-size: 10px;
+                color: #000000;
+                letter-spacing: 1.1px;
+                line-height: 15px;
+                
+                padding-bottom: 40px;
+            }
+            
+            .possibilities {
+                padding-bottom: 11px;
+            }
+            
+            ol {
+                li {
+                    font-size: 10px;
+                    color: #000000;
+                    letter-spacing: 1.1px;
+                    line-height: 15px;
+                }
+            }
+            
+            .toUppaClub {
+                display: table;
+                position: relative;
+
+                left: 0;
+            }
+            
+            .footerClub {
+                display: none;
+            }
+            
+            .grapeBerriesPicture {
+                display: none;
+            }
+        }
+        
+        .grapeBerriesBig {
+            display: flex;
+            background-image: asset-url('grape_berries_big.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            min-width: 50%;
+            height: auto;
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+    .clubOuterWrapper {
+        padding-left: 250px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .clubOuterWrapper {
+            padding-left: 300px;
+    }
+}
+
+@media (max-height: 673px) {
+    .clubOuterWrapper {
+        .grapeBerriesBig {
+            min-height: 200%;
+        }
+    }
+}
+
+@media (min-height: 673px) {
+    .clubOuterWrapper {
+        .grapeBerriesBig {
+            min-height: 150%;
+        }
+    }
+}
+
+
+@media (min-height: 750px) {
+    .clubOuterWrapper {
+        .grapeBerriesBig {
+            min-height: 115%;
+        }
+    }
+}
+
+@media (min-height: 1000px) {
+    .technologyOuterWrapper {
+        .grapeBush {
+            min-height: 105%;
+        }
+    }
+}

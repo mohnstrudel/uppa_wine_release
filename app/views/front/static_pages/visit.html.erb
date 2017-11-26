@@ -1,0 +1,58 @@
+<% meta title: 'Визит на винодельню' %>
+
+<div class="visitInnerWrapper">
+    <a href="#" class="organizeVisit">организация визита</a>
+
+    <h2 class="headerCommon">Ждем вас на&nbsp;нашей винодельне!</h2>
+
+    <p class="descriptionCommon">Вы можете посетить наше хозяйство по предварительной договоренности. Ждем Вас с 1 мая.</p>
+    <p class="descriptionCommon">Для этого необходимо отправить письмо с заявкой: время, дата, кол-во гостей, контактная информация по электронной почте info@uppawine.com или позвонить по телефону +7 (978) 259 29 79 - Александра</p>
+
+    <div class="flipperWrapper">
+        <div class="slickContainer">
+            <button id="leftArrow" class="leftArrow sliderArrow"></button>
+            <div id="slick-gallery" class="uppa-slick-theme">
+                <div>
+                    <%= image_tag("visit/guyAmongCans.jpg", alt: "Среди бочек") %>
+                    <div class="slickTextContainer">
+                        <h3>Антон Ребизов</h3>
+                        <p>Заведущий лабораторией</p>
+                    </div>
+                </div>
+                <div>
+                    <%= image_tag("visit/can.jpg", alt: "Бочка с вином") %>
+                    <div class="slickTextContainer">
+                        <h3>Pinot Noir</h3>
+                        <p>Cler Numullite</p>
+                    </div>
+                </div>
+                <div>
+                    <%= image_tag("visit/collectingGrape.jpg", alt: "Сбор винограда") %>
+                    <div class="slickTextContainer">
+                        <h3>Uppa Winery</h3>
+                        <p>Cler Numullite</p>
+                    </div>
+                </div>
+                <div>
+                    <%= image_tag("about/pavel.jpg", alt: "Павел Швец") %>
+                    <div class="slickTextContainer">
+                        <h3>Павел Швец</h3>
+                        <p>Основатель винодельни</p>
+                    </div>
+                </div>
+            </div>
+            <button id="rightArrow" class="rightArrow sliderArrow"></button>
+        </div>
+
+        <div class="visitButtonsContainer">
+            <a href="mailto:info@uppawine.com"><div class="sendRequest buttonVisit">отправить заявку<div class="arrowSmallRight"></div></div></a>
+            <a href="/contacts"><div class="goToContacts buttonVisit">контакты<div class="arrowSmallRight"></div></div></a>
+        </div>
+    </div>
+
+    <div class="footerVisit">
+        <p class="UPPA">© UPPA by Pavel Shvets</p>
+        <a href="http://redobureau.com" class="ourName">сделано в redo</a>
+    </div>
+
+</div>

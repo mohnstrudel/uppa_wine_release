@@ -1,0 +1,390 @@
+.aboutInnerWrapper {
+    display: flex;
+    overflow: scroll;
+    overflow-x: hidden;
+    flex-flow: column nowrap;
+
+    width: 100%;
+    padding: 90px 25px 0;
+
+    background-color: #EEEDE7;
+
+    .toUppaWinery {
+        position: absolute;
+        top: 40px;
+        left: 110px;
+
+        display: none;
+
+        padding-bottom: 1px;
+
+        text-decoration: none;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+
+        color: #000000;
+        border-bottom: 1px solid #000;
+
+        font-family: $sansFamily;
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 13px;
+    }
+
+    .headerCommon {
+        padding-bottom: 40px;
+    }
+
+    .descriptionCommon {
+        padding-bottom: 20px;
+    }
+
+    .aboutButtonsWrapper {
+        display: none;
+        flex-direction: row;
+        justify-content: space-between;
+
+        max-width: 512px;
+        margin-top: 20px;
+
+        a {
+            text-decoration: none;
+
+            .goToCatalog, .goToTerroir {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                width: 240px;
+                min-height: 55px;
+
+                cursor: pointer;
+                letter-spacing: 1.5px;
+                text-transform: uppercase;
+
+                color: #000000;
+                border: 1px solid #323232;
+
+                font-family: $sansFamily;
+                font-size: 10px;
+                font-weight: 700;
+                line-height: 15px;
+
+                .arrowSmallRight {
+                    width: 12px;
+                    height: 7px;
+                    margin-left: 5px;
+
+                    background-image: asset-url('arrow/arrow_small_right.svg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+            }
+
+            .aboutButton:hover {
+                color: #EEEDE7;
+                background-color: #1A1A1A;
+
+                animation: slowly 0.2s;
+
+                @keyframes slowly {
+                    0% {
+                        opacity: 0;
+                    }
+                }
+            }
+
+            .aboutButton:hover > .arrowSmallRight {
+                background-image: asset-url('arrow/arrow_small_right_white.svg');
+            }
+        }
+    }
+
+    .headerCommon:last-of-type {
+        padding-top: 35px;
+    }
+
+    .technologyButton {
+        display: none;
+
+        padding-top: 20px;
+        padding-bottom: 60px;
+
+        text-decoration: none;
+
+        .aboutTechnology {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            width: 240px;
+            min-height: 55px;
+
+            cursor: pointer;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+
+            color: #000000;
+            border: 1px solid #323232;
+
+            font-family: $sansFamily;
+            font-size: 10px;
+            font-weight: 700;
+            line-height: 15px;
+
+            .arrowSmallRight {
+                width: 12px;
+                height: 7px;
+                margin-left: 5px;
+
+                background-image: asset-url('arrow/arrow_small_right.svg');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+
+        .aboutTechnology:hover {
+            color: #EEEDE7;
+            background-color: #1A1A1A;
+
+            animation: slowly 0.2s;
+
+            @keyframes slowly {
+                0% {
+                    opacity: 0;
+                }
+            }
+        }
+
+        .aboutTechnology:hover > .arrowSmallRight {
+            background-image: asset-url('arrow/arrow_small_right_white.svg');
+        }
+    }
+
+    .mapContainerAbout {
+        padding-top: 20px;
+        padding-bottom: 78px;
+
+        #mapAbout {
+            width: 100vw;
+            height: 200px;
+            margin-bottom: 11px;
+            margin-left: calc(-50vw + 50%);
+        }
+
+        p:first-of-type {
+            color: #000000;
+
+            font-family: $sansFamily;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 15px;
+        }
+
+        p:last-of-type {
+            color: #888888;
+
+            font-family: $sansFamily;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 15px;
+        }
+    }
+
+    .footerAbout {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 100vw;
+        height: 45px;
+        margin-left: calc(-50vw + 50%);
+        padding: 0 25px;
+
+        letter-spacing: 0.75px;
+
+        color: #EEEDE7;
+        background-color: #323232;
+
+        font-family: $sansFamily;
+        font-size: 9px;
+        line-height: 12px;
+
+        a {
+            cursor: pointer;
+            text-decoration: none;
+
+            color: #EEEDE7;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    }
+}
+
+@media (min-width: 800px) {
+    .aboutInnerWrapper {
+        padding-top: 97px;
+        padding-right: 60px;
+        padding-left: 110px;
+
+        .headerCommon {
+            letter-spacing: 1px;
+
+            color: #000000;
+
+            font-size: 62px;
+            line-height: 60px;
+        }
+
+        .descriptionCommon {
+            letter-spacing: 1.17px;
+
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        .toUppaWinery {
+            display: table;
+        }
+
+        .aboutButtonsWrapper {
+            display: flex;
+        }
+
+        .technologyButton {
+            display: flex;
+        }
+
+        .mapContainerAbout {
+            #mapAbout {
+                min-height: 400px;
+                margin-bottom: 21px;
+                padding-left: 50px;
+            }
+        }
+
+        .footerAbout {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+    .aboutInnerWrapper {
+        overflow: hidden;
+        padding-left: 310px;
+
+        .toUppaWinery {
+            left: 310px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .aboutInnerWrapper {
+        padding-left: 360px;
+
+        .toUppaWinery {
+            left: 360px;
+        }
+
+        .headerCommon:last-of-type {
+            padding-top: 89px;
+            padding-bottom: 45px;
+        }
+
+        p {
+            max-width: 520px;
+        }
+
+        .photoContainerAbout {
+            width: 598px;
+            padding-top: 55px;
+            padding-left: 92px;
+
+            .photoAbout {
+                width: 511px;
+                height: 320px;
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+.slickContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .uppa-slick-theme {
+        max-width: 510px;
+        margin: 60px 30px;
+        margin-right: 0;
+
+        img {
+            max-height: 320px;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            color: #000000;
+
+            font-family: $sansFamily;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 15px;
+        }
+
+        p {
+            color: #888888;
+
+            font-family: $sansFamily;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 15px;
+        }
+    }
+
+    .sliderArrow {
+        border: none;
+        background-color: #EEEDE7;
+        cursor: pointer;
+    }
+
+    .sliderArrow:hover {
+        opacity: 0.4;
+
+        animation: animate 0.6s;
+
+        @keyframes animate {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0.4;
+            }
+        }
+    }
+
+    .rightArrow {
+        width: 16px;
+        height: 40px;
+
+        background-image: asset-url('arrow/arrow_carousel_right.svg');
+    }
+
+    .leftArrow {
+        width: 16px;
+        height: 40px;
+
+        background-image: asset-url('arrow/arrow_carousel_left.svg');
+    }
+}
+
+@media (max-width: 600px) {
+    .slickContainer {
+      width: 100vw;
+    }
+    .slickTextContainer {
+      margin-left: calc(-50vw + 50%);
+    }
+}

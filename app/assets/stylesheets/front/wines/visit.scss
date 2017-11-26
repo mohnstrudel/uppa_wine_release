@@ -1,0 +1,241 @@
+.visitInnerWrapper {
+    display: flex;
+    overflow: scroll;
+    flex-flow: column nowrap;
+
+    width: 100%;
+    padding: 91px 25px 0;
+
+    background-color: #EEEDE7;
+
+    .organizeVisit {
+        position: relative;
+        top: -50px;
+
+        display: none;
+
+        padding-bottom: 1px;
+
+        text-decoration: none;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+
+        color: #000000;
+        border-bottom: 1px solid #000;
+
+        font-family: $sansFamily;
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 13px;
+    }
+
+    .headerCommon {
+        padding-bottom: 40px;
+
+        letter-spacing: 0.45px;
+
+        color: #000000;
+
+        font-family: $serifFamily;
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 30px;
+    }
+
+    .descriptionCommon {
+        letter-spacing: 1.17px;
+
+        color: #000000;
+
+        font-family: $sansFamily;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+
+    p:nth-of-type(2) {
+        padding-bottom: 40px;
+    }
+
+    .visitButtonsContainer {
+
+        .sendRequest, .goToContacts {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            width: auto;
+            min-height: 55px;
+
+            cursor: pointer;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+
+            color: #000000;
+            border: 1px solid #323232;
+
+            font-family: $sansFamily;
+            font-size: 10px;
+            font-weight: 700;
+            line-height: 15px;
+
+            .arrowSmallRight {
+                width: 12px;
+                height: 7px;
+                margin-left: 5px;
+
+                background-image: asset-url('arrow/arrow_small_right.svg');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+
+        .sendRequest {
+            margin-bottom: 10px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .buttonVisit:hover {
+            animation: slowly 0.2s;
+
+            color: #EEEDE7;
+            background-color: #1A1A1A;
+
+            @keyframes slowly {
+                0% {
+                    opacity: 0;
+                }
+            }
+        }
+
+        .buttonVisit:hover > .arrowSmallRight {
+            background-image: asset-url('arrow/arrow_small_right_white.svg');
+        }
+    }
+
+    .footerVisit {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 100vw;
+        height: 45px;
+        margin-top: 60px;
+        margin-left: calc(-50vw + 50%);
+        padding: 0 25px;
+
+        letter-spacing: 0.75px;
+
+        color: #EEEDE7;
+        background-color: #323232;
+
+        font-family: $sansFamily;
+        font-size: 9px;
+        line-height: 12px;
+
+        a {
+            cursor: pointer;
+            text-decoration: none;
+
+            color: #EEEDE7;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    }
+}
+
+@media (min-width: 800px) {
+    .visitInnerWrapper {
+        padding: 97px 86px 0;
+        padding-bottom: 68px;
+
+        .organizeVisit {
+            display: table;
+        }
+
+        .headerCommon {
+            letter-spacing: 1px;
+
+            color: #000000;
+
+            font-size: 62px;
+            line-height: 60px;
+        }
+
+        .descriptionCommon {
+            max-width: 535px;
+        }
+
+        h2 ~ p:nth-of-type(2) {
+            padding-top: 20px;
+        }
+
+        .flipperWrapper {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        .grapeBunchWrapper {
+            margin: 0 auto;
+            padding-bottom: 0;
+
+            .carouselContainer {
+                min-width: 598px;
+                min-height: 320px;
+
+                .grapeBunch {
+                    width: 511px;
+                    min-height: 320px;
+                    margin-right: 0;
+                    margin-left: 0;
+                }
+
+                .pushLeft, .pushRight {
+                    display: flex;
+                }
+            }
+
+            p {
+                padding-left: 43px;
+            }
+
+            p:nth-of-type(2) {
+                padding-bottom: 0;
+            }
+        }
+
+        .visitButtonsContainer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            max-width: 510px;
+            padding-bottom: 70px;
+
+            .sendRequest, .goToContacts {
+                min-width: 240px;
+            }
+        }
+
+        .footerVisit {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+    .visitInnerWrapper {
+        overflow: hidden;
+
+        padding-left: 310px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .visitInnerWrapper {
+        padding-top: 97px;
+        padding-left: 360px;
+    }
+}

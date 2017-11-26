@@ -1,0 +1,13 @@
+-meta title: 'Вина'
+#bottles-index.bottlesWrapper
+  -@vintages.each_with_index do |vintage, index|
+    .bottle{class: get_bottle_class(index), style: "background-color: #{vintage.background_color}", "data-wine-path": vintage_wine_path(vintage, vintage.wines.last)}
+      -if index == 0
+        %a.goToWines{:href => "#"} ВИНА
+      =image_tag_or_default(vintage.wines.last, 'logo', class: 'bottleImage')
+      .bottleDescription{style: "cursor: default;"}
+        .wineDescription
+          .wineName=vintage.title
+          .wineSortWrapper
+            .wineSort=vintage.subtitle
+            .arrowWine

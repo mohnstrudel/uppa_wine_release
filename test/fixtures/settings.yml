@@ -1,0 +1,45 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  url: MyString
+  string,: MyString
+  logo: MyString
+  string,: MyString
+  description: MyString
+  text,: MyString
+  address: MyString
+  text,: MyString
+  opening_hours: MyString
+  hstore,: MyString
+  email: MyString
+  string,: MyString
+  long: MyString
+  float,: MyString
+  lat: MyString
+  float,: MyString
+  facebook: MyString
+  string,: MyString
+  title: MyString
+  string: MyString
+
+two:
+  url: MyString
+  string,: MyString
+  logo: MyString
+  string,: MyString
+  description: MyString
+  text,: MyString
+  address: MyString
+  text,: MyString
+  opening_hours: MyString
+  hstore,: MyString
+  email: MyString
+  string,: MyString
+  long: MyString
+  float,: MyString
+  lat: MyString
+  float,: MyString
+  facebook: MyString
+  string,: MyString
+  title: MyString
+  string: MyString

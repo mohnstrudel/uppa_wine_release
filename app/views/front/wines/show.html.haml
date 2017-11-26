@@ -1,0 +1,76 @@
+-meta title: @vintage.title + " " + @vintage.subtitle + " " + @wine.year
+
+.showOuterWrapper
+  .valleyView
+    %a.goBack{:href => "/wines"} НАЗАД
+  .showPage__bottleContainer
+    = image_tag_or_default(@wine, 'logo', class: 'showPage__bottleContainer__bottleImage')
+  .showWrapper
+    / Выбор виннишка на мобилке
+    -if @vintage.wines.count > 1
+      .winesSelector
+        .winesSelector__Title#winesSelector__Title
+          = @wine.year
+        .winesSelector__Options.hidden#winesSelector__Options
+          - @vintage.wines.each do |vw|
+            .winesSelector__Options__Item{'data-select-option': vw.slug}
+              = vw.year
+
+    / Имя бренда
+    .brandName.title=@vintage.title
+    / Сорт винограда
+    .grapeVariety
+      =@vintage.subtitle
+      =@wine.year
+    / Содержание спирта и кислотность
+    %table.title
+      %tr
+        %td.tableRowName спирт
+        %td.tableRowValue=@wine.spirit
+      %tr
+        %td.tableRowName кислотность
+        %td.tableRowValue=@wine.oxygen
+
+    / Внешний вид
+    %h3.title внешний вид
+    %p.description=@wine.looks
+
+    / Аромат
+    %h3.title аромат
+    %p.description=@wine.aroma
+
+    / Вкус
+    %h3.title вкус
+    %p.description=@wine.taste
+
+    / Период созревания
+    %h3.title ожидаемый период зрелости
+    %p.description=@wine.aging_period
+
+    / Рекомаендации
+    %h3.title гастрономические рекомендации
+    %p.description=@wine.recommendations
+
+    / Особенность
+    %h3.title Особенность
+    %p.description=@wine.speciality
+    
+    -if @vintage.wines.count > 1
+      .wineSelector
+        -if @previous_wine
+          =link_to vintage_wine_path(@vintage, @previous_wine), class: 'arrow' do
+            =image_tag 'arrow_small_left.png', class: "arrowLeft"
+        -else
+          =link_to '#' do
+            =image_tag 'arrow_small_left.png', class: "arrowLeft", style: "opacity: 0.3;"
+        .year=@wine.year
+        -if @next_wine
+          =link_to vintage_wine_path(@vintage, @next_wine), class: 'arrow' do
+            =image_tag 'arrow_small_right.png', class: "arrowRight"
+        -else
+          =link_to '#' do
+            =image_tag 'arrow_small_right.png', class: "arrowRight", style: "opacity: 0.3;"
+
+    .footer
+      %p © UPPA by Pavel Shvets
+      %a{:href => "http://redobureau.com/"}сделано в redo

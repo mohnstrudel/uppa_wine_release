@@ -1,0 +1,13 @@
+/ 18 есть?
+-unless @legal_age
+  .ageOuterWrapper
+    .ageContainer
+      .theWords Для посещения сайта необходимо подтвердить свой возраст
+      %a{:href => age_confirmation_path}
+        .alreadyEighteen
+          мне есть 18
+          .arrowSmallRight
+  / есть, есть
+.mainWrapper
+%video.bgVideo{preload: "auto", autoplay: "true", loop: "loop", muted: "muted", volume: "0"}
+  %source{src: asset_path("bg.mp4"), type: "video/mp4"}

@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'Basis Grotesque Pro';
+  font-weight: 700;
+  font-style: normal;
+
+  src: font-url('basis-bold/basis-grotesque-bold-pro.eot');
+  src: font-url('basis-bold/basis-grotesque-bold-pro.eot?#iefix') format('embedded-opentype'),
+       font-url('basis-bold/basis-grotesque-bold-pro.woff') format('woff'),
+       font-url('basis-bold/basis-grotesque-bold-pro.woff2') format('woff2'),
+       font-url('basis-bold/basis-grotesque-bold-pro.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Basis Grotesque Pro';
+  font-weight: 300;
+  font-style: normal;
+
+  src: font-url('basis-off-white/basis-grotesque-off-white-pro.eot');
+  src: font-url('basis-off-white/basis-grotesque-off-white-pro.eot?#iefix') format('embedded-opentype'),
+       font-url('basis-off-white/basis-grotesque-off-white-pro.woff') format('woff'),
+       font-url('basis-off-white/basis-grotesque-off-white-pro.woff2') format('woff2'),
+       font-url('basis-off-white/basis-grotesque-off-white-pro.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Basis Grotesque Pro';
+  font-weight: 400;
+  font-style: normal;
+
+  src: font-url('basis-regular/basis-grotesque-regular-pro.eot');
+  src: font-url('basis-regular/basis-grotesque-regular-pro.eot?#iefix') format('embedded-opentype'),
+       font-url('basis-regular/basis-grotesque-regular-pro.woff') format('woff'),
+       font-url('basis-regular/basis-grotesque-regular-pro.woff2') format('woff2'),
+       font-url('basis-regular/basis-grotesque-regular-pro.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Kazimir';
+  font-weight: 400;
+  font-style: normal;
+
+  src: font-url('kazimir/Kazimir-Regular-Web.woff') format('woff'),
+       font-url('kazimir/Kazimir-Regular-Web.woff2') format('woff2'),
+       font-url('kazimir/Kazimir-Regular-Web.ttf') format('truetype');
+}

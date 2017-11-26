@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: geometricPrecision;
+    background-color: #EEEDE7;
+}
+
+@media (min-width: 1000px) {
+    body.wines.show {
+        overflow: hidden;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: rgba(0,0,0,0);
+    -webkit-border-radius: 100px;
+}
+::-webkit-scrollbar:hover {
+    background-color: rgba(0, 0, 0, 0.09);
+}
+::-webkit-scrollbar-thumb:vertical {
+    background: rgba(0,0,0,0.5);
+    -webkit-border-radius: 100px;
+}
+::-webkit-scrollbar-thumb:vertical:active {
+    background: rgba(0,0,0,0.61);
+    -webkit-border-radius: 100px;
+}
+
+$wineDesc: #000;
+$menuBackground: #1A1A1A;
+$linkColor: rgba(216,216,216,0.3);
+$linkColorHover: #fff;
+$pageBackground: #EEEDE7;
+$serifFamily: Kazimir, Georgia, serif;
+$sansFamily: 'Basis Grotesque Pro', sans-serif;
+
+@import "fonts.scss";
+@import "slick-carousel/slick/slick.scss";
+@import "front/wines/_menu.scss";
+@import "front/wines/home.scss";
+@import "front/wines/index.scss";
+@import "front/wines/show.scss";
+@import "front/wines/shared.scss";
+@import "front/wines/about.scss";
+@import "front/wines/contacts.scss";
+@import "front/wines/technology.scss";
+@import "front/wines/visit.scss";
+@import "front/wines/club.scss";
+@import "front/wines/terra.scss";
+
+.hidden {
+    display: none;
+}

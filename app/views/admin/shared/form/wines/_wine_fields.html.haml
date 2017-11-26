@@ -1,0 +1,94 @@
+
+.form-group
+  %label.col-sm-2.control-label Изображение
+  .col-sm-8
+    .fileinput.fileinput-new.input-group{"data-provides" => "fileinput"}
+      .form-control{"data-trigger" => "fileinput"}
+        %i.glyphicon.glyphicon-file.fileinput-exists
+        %span.fileinput-filename
+      %span.input-group-addon.btn.btn-default.btn-file
+        %span.fileinput-new Выбрать файл
+        %span.fileinput-exists Поменять
+        =f.file_field :logo
+        
+      %a.input-group-addon.btn.btn-default.fileinput-exists{"data-dismiss" => "fileinput", :href => "#"} Удалить
+
+    %span.help-block.m-b-none Размер картинки — 170 на 635. Высота бутылки 545. Отступ снизу.
+  .col-sm-2
+    -if f.object.logo.present?
+      =image_tag f.object.logo.url(:mini_thumb)
+.hr-line-dashed
+
+.form-group
+  %label.col-lg-2.control-label Год урожая
+  .col-lg-10
+    =f.text_field :year, class: "form-control"
+.hr-line-dashed
+
+
+.form-group
+  %label.col-lg-2.control-label Кол-во бутылок
+  .col-lg-10
+    =f.number_field :bottle_amount, class: "form-control"
+.hr-line-dashed
+
+
+.form-group
+  %label.col-lg-2.control-label Процент алкоголя
+  .col-lg-10
+    =f.text_field :spirit, class: "form-control"
+.hr-line-dashed
+
+
+.form-group
+  %label.col-lg-2.control-label Кислотность
+  .col-lg-10
+    =f.text_field :oxygen, class: "form-control"
+.hr-line-dashed
+
+
+.form-group
+  %label.col-lg-2.control-label Аромат
+  .col-lg-10
+    =f.text_field :aroma, class: "form-control"
+.hr-line-dashed
+
+
+.form-group
+  %label.col-lg-2.control-label Внешний вид
+  .col-lg-10
+    =f.text_field :looks, class: "form-control"
+.hr-line-dashed
+
+
+.form-group
+  %label.col-lg-2.control-label Вкус
+  .col-lg-10
+    =f.text_field :taste, class: "form-control"
+.hr-line-dashed
+
+
+.form-group
+  %label.col-lg-2.control-label Рекомендации
+  .col-lg-10
+    =f.text_area :recommendations, class: "form-control", rows: 8
+.hr-line-dashed
+
+
+.form-group
+  %label.col-lg-2.control-label Период созревания
+  .col-lg-10
+    =f.text_field :aging_period, class: "form-control"
+.hr-line-dashed
+
+.form-group
+  %label.col-lg-2.control-label Особенность
+  .col-lg-10
+    =f.text_field :speciality, class: "form-control"
+.hr-line-dashed
+
+.wine_row
+  .input-group
+    %span.input-group-btn
+      =f.hidden_field :_destroy
+      =link_to 'Удалить', "#", class: "remove_record btn btn-danger"

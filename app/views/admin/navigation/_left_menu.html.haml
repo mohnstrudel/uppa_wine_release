@@ -1,0 +1,40 @@
+%nav.navbar-default.navbar-static-side{:role => "navigation"}
+  .sidebar-collapse
+    %ul#side-menu.nav.metismenu
+      %li.nav-header
+        .dropdown.profile-element
+          %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+            %span.clear
+              %span.block.m-t-xs
+                %strong.font-bold
+                  Admin Adminov
+              %span.text-muted.text-xs.block
+                Art Director
+                %b.caret
+          %ul.dropdown-menu.animated.fadeInRight.m-t-xs
+            %li
+              Edit profile
+            %li
+              Logout
+        .logo-element
+          IN+
+      =nav_link admin_path do
+        %i.fa.fa-area-chart
+        %span.nav-label
+          =t('admin.navigation.dashboard')
+      =nav_link "" do
+        %i.fa.fa-glass
+        %span.nav-label
+          Вина
+        %span.fa.arrow
+        %ul.nav.nav-second-level.collapse
+          %li.active
+            =link_to 'Список вин', admin_vintages_path
+          %li
+            =link_to 'Новое вино', new_admin_vintage_path
+
+      =nav_link admin_settings_path do
+        %i.fa.fa-cog
+        %span.nav-label
+          Настройки
+        

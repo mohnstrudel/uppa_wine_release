@@ -1,0 +1,103 @@
+.ibox.float-e-margins
+  .ibox-title
+    %h5
+      ="#{controller.action_name.capitalize} #{object.class.name}"
+      %small With custom checbox and radion elements.
+    .ibox-tools
+      %a.collapse-link
+        %i.fa.fa-chevron-up
+      %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+        %i.fa.fa-wrench
+      %ul.dropdown-menu.dropdown-user
+        %li
+          %a{:href => "#"} Config option 1
+        %li
+          %a{:href => "#"} Config option 2
+      %a.close-link
+        %i.fa.fa-times
+  .ibox-content
+
+    -if object.respond_to?(:title)
+      .form-group
+        %label.col-sm-2.control-label
+          Заголовок
+        .col-sm-10
+          =f.text_field :title, class: 'form-control'
+      .hr-line-dashed
+
+    -if object.respond_to?(:subtitle)
+      .form-group
+        %label.col-sm-2.control-label
+          Второй заголовок
+        .col-sm-10
+          =f.text_field :subtitle, class: 'form-control'
+          %span.help-block.m-b-none Например "Charantay CHARDONNAY 2016" - CHARDONNAY в данном случае второй заголовок
+      .hr-line-dashed
+    / Fields for general settings start (only unique fields)
+    =render partial: "admin/shared/form/general_settings_fields", locals: {f: f, object: object}
+
+    -if object.respond_to?(:sortable)
+      .form-group
+        %label.col-sm-2.control-label
+          Сотрировка
+        .col-sm-10
+          =f.number_field :sortable, class: 'form-control'
+          %span.help-block.m-b-none Чем меньше число, тем левее будет вино в списке
+      .hr-line-dashed
+
+    
+    -if object.respond_to?(:description)
+      .form-group
+        %label.col-sm-2.control-label
+          =t('admin.form.model.description')
+        .col-sm-10
+          =f.bootsy_area :description, class: 'form-control'
+          
+      .hr-line-dashed
+    -if object.respond_to?(:body)
+      .form-group
+        %label.col-sm-2.control-label
+          =t('admin.form.model.body')
+        .col-sm-10
+          =f.bootsy_area :body, class: 'form-control', rows: 12
+      .hr-line-dashed
+    -if object.respond_to?(:slug)
+      .form-group
+        %label.col-sm-2.control-label
+          =t('admin.form.model.slug')
+        .col-sm-10
+          =f.text_field :slug, class: 'form-control'
+      .hr-line-dashed
+    -if object.respond_to?(:page_category_id)
+      .form-group
+        %label.col-lg-2.control-label
+          =t('admin.form.model.category')
+        .col-lg-10
+          =f.select :page_category_id, PageCategory.all.map { |page_category| [ page_category.title, page_category.id ] }, {}, { class: "form-control m-b" } 
+      .hr-line-dashed
+    -if object.respond_to?(:post_category_id)
+      .form-group
+        %label.col-lg-2.control-label
+          =t('admin.form.model.category')
+        .col-lg-10
+          =f.select :post_category_id, PostCategory.all.map { |post_category| [ post_category.title, post_category.id ] }, {}, { class: "form-control m-b" }
+      .hr-line-dashed
+
+    / Wine part begin
+    =render partial: 'admin/shared/form/vintages/vintage_fields', locals: { f: f, object: object }
+    / Wine part end
+
+    / User part begin (only unique to user fields)
+    =render partial: "admin/shared/form/user_fields", locals: { f: f, object: object }
+    / User part end
+
+    / User part begin (only unique to user fields)
+    =render partial: "admin/shared/form/general_settings/contact_fields", locals: { f: f, object: object }
+    / User part end
+
+
+    .hr-line-dashed
+    .form-group
+      .col-sm-4.col-sm-offset-2
+        =link_to "Назад", send("admin_#{local_assigns[:namespace]}#{object_name(object).pluralize}_path"), class: 'btn btn-white'
+        =f.submit "Сохранить", class: 'btn btn-primary'

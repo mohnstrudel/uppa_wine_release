@@ -1,0 +1,263 @@
+.contactsInnerWrapper {
+    display: flex;
+    overflow: scroll;
+    flex-flow: column nowrap;
+
+    width: 100%;
+    padding: 91px 25px 0;
+
+    background-color: #EEEDE7;
+
+    .toContacts {
+        display: none;
+
+        text-decoration: none;
+        text-transform: uppercase;
+
+        font-family: $sansFamily;
+        font-size: 10px;
+        color: #000000;
+        letter-spacing: 1px;
+        line-height: 13px;
+        font-weight: 700;
+
+        position: absolute;
+        top: -50px;
+        left: 110px;
+        padding-bottom: 1px;
+        border-bottom: 1px solid #000;
+    }
+
+    .headerCommon {
+        padding-bottom: 15px;
+        font-size: 34px;
+    }
+
+    .titleCommon {
+        padding-top: 25px;
+        padding-bottom: 5px;
+
+        letter-spacing: 1.8px;
+        text-transform: uppercase;
+
+        font-family: $sansFamily;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 20px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    .showMap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: auto;
+        min-height: 55px;
+        margin-top: 39px;
+        margin-bottom: 60px;
+
+        cursor: pointer;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+
+        color: #000000;
+        border: 1px solid #323232;
+
+        font-family: $sansFamily;
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 15px;
+
+        .arrowSmallRight {
+            width: 12px;
+            height: 7px;
+            margin-left: 5px;
+
+            background-image: asset-url('arrow/arrow_small_right.svg');
+        }
+    }
+
+    .wannaVisit {
+        display: none;
+
+        width: 233px;
+        padding-top: 55px;
+
+        letter-spacing: 1px;
+
+        color: #000000;
+
+        font-family: $sansFamily;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 25px;
+    }
+
+    .wannaVisit + a {
+        text-decoration: none;
+    }
+
+    .knowMore {
+        display: none;
+        align-items: center;
+
+        padding-top: 18px;
+
+        letter-spacing: 1px;
+        text-transform: uppercase;
+
+        color: #000000;
+
+        font-family: $sansFamily;
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 13px;
+
+        .arrowSmallRight {
+            width: 12px;
+            height: 7px;
+            margin-left: 6px;
+
+            background-image: asset-url('arrow/arrow_small_right.svg');
+        }
+    }
+
+    .footerContacts {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 100vw;
+        height: 45px;
+        margin-left: calc(-50vw + 50%);
+        padding: 0 25px;
+
+        letter-spacing: 0.75px;
+
+        color: #EEEDE7;
+        background-color: #323232;
+
+        font-family: $sansFamily;
+        font-size: 9px;
+        line-height: 12px;
+    }
+
+    .footerContacts a {
+        cursor: pointer;
+        text-decoration: none;
+
+        color: #EEEDE7;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    }
+}
+
+#contactsMap {
+    display: none;
+
+    width: 250px;
+    min-height: 100%;
+}
+
+@media (min-width: 800px) {
+    .contactsOuterWrapper {
+        display: flex;
+        flex-direction: row;
+
+        padding-left: 50px;
+
+        .contactsInnerWrapper {
+            min-width: 50%;
+            min-height: 100vh;
+            padding-bottom: 45px;
+            padding-left: 59px;
+
+            .questionContacts {
+                padding-bottom: 18px;
+
+                letter-spacing: 0.55px;
+
+                color: #1A1A1A;
+
+                font-size: 34px;
+                line-height: 60px;
+            }
+
+            .toContacts {
+                display: table;
+                position: relative;
+
+                left: 0;
+            }
+
+            .titleCommon {
+                padding-top: 14px;
+                padding-bottom: 6px;
+
+                letter-spacing: 1.5px;
+
+                font-size: 10px;
+                line-height: 15px;
+            }
+
+            .descriptionCommon {
+                letter-spacing: 1.1px;
+
+                font-size: 10px;
+                line-height: 15px;
+            }
+
+            .wannaVisit {
+                display: flex;
+
+                padding-top: 39px;
+            }
+
+            .knowMore {
+                display: flex;
+            }
+
+            .showMap {
+                display: none;
+            }
+
+            .footerContacts {
+                display: none;
+            }
+        }
+
+        #contactsMap {
+            display: flex;
+
+            min-width: 50%;
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+    .contactsOuterWrapper {
+        padding-left: 250px;
+
+        .contactsInnerWrapper {
+            overflow: hidden;
+            
+            .wannaVisit {
+                padding-top: 54px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .contactsOuterWrapper {
+        padding-left: 300px;
+
+        .contactsInnerWrapper {
+            padding: 106px 58px 45px;
+        }
+    }
+}

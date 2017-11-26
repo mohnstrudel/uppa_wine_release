@@ -1,0 +1,19 @@
+-if object.respond_to?(:background_color)
+  .form-group
+    %label.col-sm-2.control-label
+      Бэкграунд
+    .col-sm-10
+      =f.text_field :background_color, class: 'form-control colorpicker-field'
+      %span.help-block.m-b-none Цвет для фона на индексной странице (список вин). В формате #000000 или выбором самого цвета.
+  .hr-line-dashed
+
+-if object.respond_to?(:wines)
+  .form-group
+    %label.col-sm-2.control-label
+      Урожай
+    .col-sm-10
+      =f.fields_for :wines do |wine_builder|
+        =render partial: 'admin/shared/form/wines/wine_fields', locals: { f: wine_builder }
+      %span.help-block.m-b-none
+        =link_to_add_fields 'Добавить урожай', f, :wines, 'admin/shared/form/wines/wine_fields', class: 'btn btn-default'
+  .hr-line-dashed

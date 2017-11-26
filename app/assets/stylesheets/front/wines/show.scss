@@ -1,0 +1,344 @@
+.winesSelector {
+    margin-bottom: 55px;
+
+    cursor: pointer;
+    letter-spacing: 1px;
+
+    font-size: 10px;
+    &__Title {
+        position: relative;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: auto;
+        height: 55px;
+
+        border: 1px solid black;
+
+        &::after {
+            position: absolute;
+            top: 25px;
+            right: 25px;
+
+            display: block;
+
+            width: 7px;
+            height: 5px;
+
+            content: '';
+
+            background-image: asset-url('arrow/arrow_small_down.svg');
+            background-repeat: no-repeat;
+        }
+    }
+    &__Options {
+        display: flex;
+        flex-direction: column;
+
+        width: auto;
+
+        text-align: center;
+
+        border: 1px solid black;
+        border-top: none;
+        border-bottom: none;
+
+        &__Item {
+            width: 100%;
+            padding: 25px 0;
+
+            border-bottom: 1px solid #000;
+        }
+    }
+}
+
+.valleyView {
+    display: none;
+    overflow: hidden;
+
+    min-width: 250px;
+    min-height: 100%;
+
+    background-image: asset-url('forwine.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .goBack {
+        position: relative;
+        top: 37px;
+        left: 56px;
+
+        height: 15px;
+        padding-bottom: 1px;
+
+        text-decoration: none;
+        letter-spacing: 1px;
+
+        color: #000;
+        border-bottom: 1px solid #000;
+
+        font-family: $sansFamily;
+        font-size: 10px;
+        font-weight: 700;
+    }
+}
+
+.showPage__bottleContainer {
+    display: none;
+}
+
+.showWrapper {
+  display: flex;
+  overflow: scroll;
+  flex-flow: column nowrap;
+
+  width: 100%;
+  height: auto;
+  padding: 80px 25px 0;
+
+  background-color: #EEEDE7;
+
+  .title {
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+
+    font-family: $sansFamily;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+
+  .description {
+    padding-top: 5px;
+    padding-bottom: 20px;
+
+    letter-spacing: 1.1px;
+
+    font-family: $sansFamily;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .grapeVariety {
+    letter-spacing: 0.45px;
+
+    font-size: 28px;
+    line-height: 30px;
+  }
+
+  table {
+    padding: 30px 0 20px 0;
+      tr {
+          .tableRowValue {
+              font-weight: 400;
+          }
+      }
+  }
+
+  .tableRowName {
+    width: 190px;
+  }
+
+    .wineSelector {
+        display: none;
+    }
+
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: auto;
+    width: 100vw;
+    height: 45px;
+    margin-top: 35px;
+    margin-left: calc(-50vw + 50%);
+    padding: 0 25px;
+
+    letter-spacing: 0.75px;
+
+    color: #EEEDE7;
+    background-color: #323232;
+
+    font-family: $sansFamily;
+    font-size: 9px;
+    line-height: 12px;
+  }
+
+  .footer a {
+    cursor: pointer;
+    text-decoration: none;
+
+    color: #EEEDE7;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media (min-width: 800px) {
+    .showOuterWrapper {
+        display: flex;
+        flex-direction: row;
+
+        height: 100%;
+        padding-left: 50px;
+    }
+
+    .valleyView {
+        display: flex;
+    }
+
+    .showPage__bottleContainer {
+        position: absolute;
+        left: 217px;
+
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+
+        box-sizing: border-box;
+        width: 170px;
+        max-height: 100vh;
+    }
+
+    .showPage__bottleContainer__bottleImage {
+        position: static;
+
+        display: block;
+
+        width: auto;
+        max-height: 100vh;
+        margin-top: 15vh;
+    }
+
+    .showWrapper {
+        min-width: 500px;
+        padding-top: 8vh;
+        padding-right: 80px;
+        padding-left: 130px;
+
+        .winesSelector {
+            display: none;
+        }
+
+        .grapeVariety {
+            padding-top: 5px;
+
+            letter-spacing: 0.55px;
+
+            color: #000000;
+
+            font-family: $serifFamily;
+            font-size: 34px;
+        }
+
+        .title {
+            letter-spacing: 1.5px;
+
+            font-family: $sansFamily;
+            font-size: 10px;
+            font-weight: 700;
+            line-height: 15px;
+        }
+
+        .description {
+            max-width: 300px;
+            padding-bottom: 14px;
+
+            letter-spacing: 1.1px;
+
+            font-family: $sansFamily;
+            font-size: 10px;
+            line-height: 15px;
+        }
+
+
+        .wineSelector {
+            display: flex;
+            justify-content: space-between;
+
+            width: 77px;
+            height: 15px;
+            margin-top: auto;
+            margin-bottom: 37px;
+            margin-left: 100px;
+
+            letter-spacing: 1.5px;
+
+            color: #000000;
+
+            font-family: $sansFamily;
+            font-size: 10px;
+            font-weight: 700;
+            line-height: 15px;
+
+            a {
+                cursor: pointer;
+            }
+
+            .arrowLeft {
+                width: 12px;
+                height: 7px;
+            }
+
+            .arrowRight {
+                width: 12px;
+                height: 7px;
+            }
+        }
+
+        .footer {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+    .showOuterWrapper {
+        padding-left: 250px;
+
+        .showPage__bottleContainer {
+            left: 417px;
+        }
+
+        .showWrapper {
+            overflow-x: hidden;
+            
+            .tableRowValue {
+                letter-spacing: 1.1px;
+
+                color: #000000;
+
+                font-family: $sansFamily;
+                font-size: 10px;
+                font-weight: 400;
+                line-height: 15px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .showOuterWrapper {
+        padding-left: 300px;
+
+        .valleyView {
+            min-width: 300px;
+        }
+
+        .showPage__bottleContainer {
+            left: 517px;
+        }
+
+        .showWrapper {
+            padding-top: 20vh;
+            padding-left: 160px;
+
+            .wineSelector {
+                margin-bottom: 87px;
+            }
+        }
+    }
+}

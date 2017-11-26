@@ -1,0 +1,54 @@
+#menu.menuWrapper.mobileHelper
+  .menuHeader
+    %a.logoUPPA{:href => "/"}
+    #menuHeaderCloseBtn.menuHeaderCloseBtn
+    #menuHeaderOpenBtn.menuHeaderOpenBtn
+  .menuBody
+    .listItemsWrapper
+      %ul
+        %li.listItem
+          %a{:href => "/wines"} Вина
+          .arrowBig
+        %li.listItem
+          %a{:href => "/terra"} Терруар
+          .arrowBig
+        %li.listItem
+          %a{:href => "/about"} О винодельне
+          .arrowBig
+        %li.listItem
+          %a{:href => "/technology"} Технология
+          .arrowBig
+        %li.listItem
+          %a{:href => "/club"} Клуб UPPA
+          .arrowBig
+    .menuFooter
+      .contactsWrapper
+        %ul
+          %li.contactItem
+            %a{:href => "/contacts"} Контакты
+            .arrowSmall
+          %li.contactItem
+            %a{:href => "/visit"} Организация визита
+            .arrowSmall
+      .socialWrapper
+        -if @setting.instagram.present?
+          %a.instagram{:href => "#{@setting.instagram}"}
+        -if @setting.facebook.present?
+          %a.facebook{:href => "#{@setting.facebook}"}
+        -if @setting.vk.present?
+          %a.vkontakte{:href => "#{@setting.vk}"}
+      .signatureWrapper
+        .signImg
+        .uppaShvets UPPA by Pavel Shvets
+        .ourName
+          Сделано
+          %a{:href => "http://redobureau.com/"} redo
+-if is_black ||= false
+  .header.headerBlack
+    %a.logoUPPA{href: '/'}
+    #headerOpenBtn.headerOpenBtn
+-else
+  .header
+    %a.logoUPPA{href: '/'}
+    #headerOpenBtn.headerOpenBtn
+#dim

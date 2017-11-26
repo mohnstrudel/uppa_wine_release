@@ -1,0 +1,258 @@
+.terraInnerWrapper {
+    display: flex;
+    overflow: scroll;
+    overflow-x: hidden;
+    flex-flow: column nowrap;
+
+    width: 100%;
+
+    background-color: #EEEDE7;
+
+    .toTerroir {
+        position: absolute;
+        top: 40px;
+        left: 110px;
+
+        display: none;
+
+        padding-bottom: 1px;
+
+        text-decoration: none;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+
+        color: #000000;
+        border-bottom: 1px solid #000;
+
+        font-family: $sansFamily;
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 13px;
+    }
+
+    .contentContainer {
+        padding: 91px 25px 0;
+
+        .headerCommon {
+            padding-bottom: 45px;
+
+            letter-spacing: 0.45px;
+
+            color: #000000;
+
+            font-family: $serifFamily;
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 29px;
+        }
+
+        .palatiPicture, .numullitePicture {
+            width: 100vw;
+            height: 191px;
+            margin-bottom: 39px;
+            margin-left: calc(-50vw + 50%);
+
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .palatiPicture {
+            background-image: asset-url('palati_small.png');
+        }
+
+        .numullite {
+            padding-top: 50px;
+        }
+
+        .numullitePicture {
+            background-image: asset-url('numullite_small.png');
+        }
+
+        .descriptionCommon {
+            padding-bottom: 20px;
+
+            letter-spacing: 1.1px;
+
+            color: #000000;
+
+            font-family: $sansFamily;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+        }
+
+        .titleCommon {
+            padding-bottom: 5px;
+
+            letter-spacing: 1.8px;
+            text-transform: uppercase;
+
+            color: #000000;
+
+            font-family: $sansFamily;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 20px;
+        }
+
+        .table {
+            padding: 0 0 20px 0;
+            tr {
+                .tableRowValue {
+                    font-weight: 400;
+                }
+            }
+        }
+
+        .tableRowName {
+            width: 190px;
+        }
+
+        .footerTerra {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            width: 100vw;
+            height: 45px;
+            margin-top: 60px;
+            margin-left: calc(-50vw + 50%);
+            padding: 0 25px;
+
+            letter-spacing: 0.75px;
+
+            color: #EEEDE7;
+            background-color: #323232;
+
+            font-family: $sansFamily;
+            font-size: 9px;
+            line-height: 12px;
+
+            a {
+                cursor: pointer;
+                text-decoration: none;
+
+                color: #EEEDE7;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            }
+        }
+    }
+
+    .polatiNummulite {
+        display: none;
+        overflow: scroll;
+        flex-direction: column;
+
+        min-width: 50%;
+
+        .polatiBigPicture {
+            min-height: 50%;
+
+            // background-image: asset-url('palati_big.png');
+            background-image: asset-url('terra_upper_pic.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .nummuliteBigPicture {
+            min-height: 50%;
+
+            // background-image: asset-url('numullite_big.png');
+            background-image: asset-url('terra_lower_pic.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+}
+
+
+@media (min-width: 800px) {
+    .terraInnerWrapper {
+        flex-direction: row;
+
+        padding-left: 50px;
+
+        .toTerroir {
+            display: table;
+        }
+
+        .contentContainer {
+            min-width: 50%;
+            padding-right: 60px;
+            padding-bottom: 66px;
+            padding-left: 60px;
+
+            .headerCommon {
+                letter-spacing: 0.55px;
+
+                color: #1A1A1A;
+
+                font-size: 34px;
+                line-height: 60px;
+            }
+
+            .titleCommon {
+                padding-bottom: 6px;
+
+                letter-spacing: 1.5px;
+
+                color: #000000;
+
+                font-size: 10px;
+                line-height: 15px;
+            }
+
+            .descriptionCommon {
+                padding-bottom: 14px;
+
+                letter-spacing: 1.1px;
+
+                color: #000000;
+
+                font-size: 10px;
+                line-height: 15px;
+            }
+
+            .tableRowName {
+                width: 160px;
+            }
+
+            .illustration {
+                display: none;
+            }
+
+            .footerTerra {
+                display: none;
+            }
+        }
+
+        .polatiNummulite {
+            display: flex;
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+    .terraInnerWrapper {
+        overflow: hidden;
+
+        padding-left: 250px;
+
+        .toTerroir {
+            left: 310px;
+        }
+        .polatiNummulite {
+            overflow: hidden;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .terraInnerWrapper {
+        padding-left: 300px;
+
+        .toTerroir {
+            left: 360px;
+        }
+    }
+}

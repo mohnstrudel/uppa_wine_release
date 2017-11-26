@@ -1,0 +1,38 @@
+-if object.respond_to?(:sales_phone)
+  .form-group
+    %label.col-lg-2.control-label
+      Отдел продаж
+    .col-lg-10
+      .col-xs-12.col-md-5
+        .form-group
+          =f.text_field :sales_phone, class: 'form-control', placeholder: "Телефон сотрудника продаж"
+      .col-xs-12.col-md-7.pull-right
+        =f.text_field :sales_name, class: 'form-control', placeholder: "Имя сотрудника продаж"
+  .form-group
+    .col-lg-2
+    .col-lg-10
+      =f.text_field :sales_email, class: 'form-control', placeholder: "Мейл сотрудника продаж"
+  .hr-line-dashed
+
+-if object.respond_to?(:visit_phone)
+  .form-group
+    %label.col-lg-2.control-label
+      Отдел посещений
+    .col-lg-10
+      .col-xs-12.col-md-5
+        .form-group
+          =f.text_field :visit_phone, class: 'form-control', placeholder: "Телефон сотрудника посещений (визитов)"
+      .col-xs-12.col-md-7.pull-right
+        =f.text_field :visit_name, class: 'form-control', placeholder: "Имя сотрудника посещений (визитов)"
+  .form-group
+    .col-lg-2
+    .col-lg-10
+      =f.text_field :visit_email, class: 'form-control', placeholder: "Мейл сотрудника посещений (визитов)"
+  .hr-line-dashed
+
+-if object.respond_to?(:post_address)
+  .form-group
+    %label.col-sm-2.control-label
+      Почтовый адрес
+    .col-sm-10
+      =f.bootsy_area :post_address, class: 'form-control', rows: 4
