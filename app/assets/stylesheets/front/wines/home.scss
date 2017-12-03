@@ -185,3 +185,33 @@
         background-size: cover;
     }
 }
+
+
+/* Надпись на главной */
+
+.text-on-index {
+	font-family: Kazimir, Georgia, serif;
+	font-size: 35px;
+	position: absolute;
+	top: 43%;
+	color: white;
+	width: 100%;
+	text-align: center;
+	padding-left: 360px;
+	padding-right: 60px;
+	z-index: 5000;
+}
+
+@media (max-width: 1000px) {
+	.text-on-index {
+		padding-left: 140px;
+		padding-right: 60px;
+	}
+}
+
+@media (max-width: 799px) {
+	.text-on-index {
+		padding-left: 60px;
+		padding-right: 60px;
+	}
+}
