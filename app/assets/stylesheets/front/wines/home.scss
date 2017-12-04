@@ -199,7 +199,7 @@
 	text-align: center;
 	padding-left: 360px;
 	padding-right: 60px;
-	z-index: 5000;
+	z-index: 9;
 }
 
 @media (max-width: 1000px) {
@@ -213,5 +213,20 @@
 	.text-on-index {
 		padding-left: 60px;
 		padding-right: 60px;
+
+	}
+}
+
+@media (max-width: 640px) {
+	.text-on-index {
+		font-size: 21px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+@media (max-width: 361px) {
+	.text-on-index {
+
 	}
 }
