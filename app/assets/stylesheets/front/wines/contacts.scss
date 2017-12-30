@@ -1,3 +1,65 @@
+.aboutButtonsWrapper {
+
+    flex-direction: row;
+    justify-content: space-between;
+
+    max-width: 512px;
+    margin-top: 20px;
+
+    a {
+        text-decoration: none;
+
+        .downloadLogo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            width: 240px;
+            min-height: 55px;
+
+            cursor: pointer;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+
+            color: #000000;
+            border: 1px solid #323232;
+
+            font-family: $sansFamily;
+            font-size: 10px;
+            font-weight: 700;
+            line-height: 15px;
+
+            .arrowSmallRight {
+                width: 12px;
+                height: 7px;
+                margin-left: 5px;
+
+                background-image: asset-url('arrow/arrow_small_right.svg');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+
+        .aboutButton:hover {
+            color: #EEEDE7;
+            background-color: #1A1A1A;
+
+            animation: slowly 0.2s;
+
+            @keyframes slowly {
+                0% {
+                    opacity: 0;
+                }
+            }
+        }
+
+        .aboutButton:hover > .arrowSmallRight {
+            background-image: asset-url('arrow/arrow_small_right_white.svg');
+        }
+    }
+}
+
+
 .contactsInnerWrapper {
     display: flex;
     overflow: scroll;
@@ -244,7 +306,7 @@
 
         .contactsInnerWrapper {
             overflow: hidden;
-            
+
             .wannaVisit {
                 padding-top: 54px;
             }
