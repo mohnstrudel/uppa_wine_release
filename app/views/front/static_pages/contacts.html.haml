@@ -26,6 +26,12 @@
       .showMap
         показать на карте
         .arrowSmallRight
+
+    .aboutButtonsWrapper
+      %a{:href => root_url+'logo.eps', target: "_blank"}
+        .downloadLogo.aboutButton
+          Скачать логотип
+          .arrowSmallRight
     .wannaVisit Хотите организовать визит?
     %a{:href => "/visit"}
       .knowMore
