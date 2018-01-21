@@ -2,10 +2,10 @@
 -unless @legal_age
   .ageOuterWrapper
     .ageContainer
-      .theWords Для посещения сайта необходимо подтвердить свой возраст
+      .theWords=t('static.home.visit')
       %a{:href => age_confirmation_path}
         .alreadyEighteen
-          мне есть 18
+          =t('static.home.legal')
           .arrowSmallRight
   / есть, есть
 .mainWrapper

@@ -1,55 +1,57 @@
--meta title: 'О винодельне'
+-meta title: t('static.about.title')
 
 .aboutInnerWrapper
   %a.toUppaWinery{:href => "#"} uppa winery
-  %h2.headerCommon Добро пожаловать в Uppa!
-  %p.descriptionCommon Рады приветствовать Вас на официальном сайте Uppa Winery! Наша винодельня — небольшое хозяйство, дружная семья и команда единомышленников.
-  %p.descriptionCommon В своей работе мы используем исключительные методы виноделия и виноградарства, сочетающие в себе уважение к природе и внимание к мелочам. Наши вина — истинное выражение уникального севастопольского терруара.
-  %p.descriptionCommon UPPA WINERY  раскрывает образ крымского вина в сознании ценителей.
+  %h2.headerCommon=t('static.about.headerCommon')
+  %p.descriptionCommon=t('static.about.descriptionCommon_1')
+  %p.descriptionCommon=t('static.about.descriptionCommon_2')
+  %p.descriptionCommon=t('static.about.descriptionCommon_3')
   .aboutButtonsWrapper
-    %a{:href => "/wines"}
+    =link_to vintages_path do
       .goToCatalog.aboutButton
-        перейти в каталог
+        =t('menu.to_catalog')
         .arrowSmallRight
-    %a{:href => "/terra"}
+    =link_to terra_path do
       .goToTerroir.aboutButton
-        терруар
+        =t('menu.terra')
         .arrowSmallRight
-  %h2.headerCommon Наша история
-  %p.descriptionCommon Предприятие UPPA WINERY было основано в 2008 году Павлом Швецом, человеком по- настоящему влюбленным в вино и в свой родной край. Винодел родился и вырос в Севастополе, учился в Санкт-Петербурге и Москве. Свою трудовую деятельность Павел начал в 1996 году как сомелье, и стал одним из первых, кто освоил эту профессию в России. В 2000 году он был признан «Лучшим сомелье» страны. Вернувшись из столицы, винодел заложил свой первый виноградник в родном Севастополе. Основная философия Павла Швеца — терруарность и уникальность в каждой бутылке.
+  %h2.headerCommon=t('static.about.ourHistory')
+  %p.descriptionCommon=t('static.about.descriptionCommon_4')
   .slickContainer
     %button#leftArrow.leftArrow.sliderArrow
     #slick-gallery.uppa-slick-theme
       %div
         = image_tag("about/pavelInBushes.jpg", alt: "Павел Швец")
         .slickTextContainer
-          %h3 Павел Швец
-          %p Основатель винодельни
+          %h3=t('static.about.image_1.header')
+          %p=t('static.about.image_1.desc')
       %div
         = image_tag("about/tractor.jpg", alt: "Трактор в винограднике")
         .slickTextContainer
-          %h3 Сбор урожая
-          %p Виноградник Cler Numullite
+          %h3=t('static.about.image_2.header')
+          %p=t('static.about.image_2.desc')
       %div
         = image_tag("about/seaOfGreen.jpg", alt: "Море зелени")
         .slickTextContainer
-          %h3 Осенью
-          %p Виноградник Cler Numullite
+          %h3=t('static.about.image_3.header')
+          %p=t('static.about.image_3.desc')
+
       %div
         = image_tag("about/grapeOnBranch.jpg", alt: "Гроздь винограда")
         .slickTextContainer
-          %h3 Cabernet Sauvignon
-          %p Виноградник Cler Numullite
+          %h3=t('static.about.image_4.header')
+          %p=t('static.about.image_4.desc')
+
     %button#rightArrow.rightArrow.sliderArrow
-  %p.descriptionCommon Uppa Winery – единственная винодельня России, которая производит биодинамическое вино. В переводе с татарского «Уппа» означает «мать». Также это название небольшой реки, протекающей неподалеку от села Родное, где располагается хозяйство. Благодаря уникальности севастопольского терруара и особенностям климатической зоны Уппинской котловины, вина, производимые нами, обладают по-настоящему уникальными качествами, которые четко выделяют их среди остальных. В хозяйстве UPPA WINERY всего 10 га виноградников, и годовой объем производства около 50 000 бутылок. Мы выращиваем 12 сортов и создаем более 20-ти различных вин. Тем не менее, при небольшом объеме производства, наши вина представлены почти во всех лучших ресторанах страны, украшают погреба многих коллекционеров, а также высоко ценятся ведущими мировыми экспертами и сомелье.
-  %a.technologyButton{:href => "/technology"}
+  %p.descriptionCommon=t('static.about.descriptionCommon_5')
+  =link_to technology_path, class: 'technologyButton' do
     .aboutTechnology
-      о технологии
+      =t('menu.about_technology')
       .arrowSmallRight
   .mapContainerAbout
     #mapAbout
-    %p Крымский полуостров
-    %p г. Севастополь
+    %p=t('static.about.map.island')
+    %p=t('static.about.map.city')
   .footerAbout
     %p.UPPA © UPPA by Pavel Shvets
     %a.ourName{:href => "http://redobureau.com"} сделано в redo

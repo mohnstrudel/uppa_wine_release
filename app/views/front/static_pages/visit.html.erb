@@ -1,12 +1,13 @@
-<% meta title: 'Визит на винодельню' %>
+<% meta title: t('static.visit.title') %>
 
 <div class="visitInnerWrapper">
-    <a href="#" class="organizeVisit">организация визита</a>
+    <a href="#" class="organizeVisit"> <%= t('static.visit.main') %> </a>
 
-    <h2 class="headerCommon">Ждем вас на&nbsp;нашей винодельне!</h2>
+    <h2 class="headerCommon"> <%= t('static.visit.headerCommon') %> </h2>
 
-    <p class="descriptionCommon">Вы можете посетить наше хозяйство по предварительной договоренности. Ждем Вас на экскурсию по винодельне и дегустацию.</p>
-    <p class="descriptionCommon">Для этого необходимо отправить письмо с заявкой, где указаны время, дата, количество гостей и контактнаяинформация, по электронной почте info@uppawine.com или позвонить по телефону +7 (978) 259 29 79 – Александра. <br><br> Ждем Вас с 1 мая по 01 октября.</p>
+    <p class="descriptionCommon"> <%= t('static.visit.descriptionCommon_1') %></p>
+    <p class="descriptionCommon"> <%= t('static.visit.descriptionCommon_2') %>
+        <br><br> <%= t('static.visit.we_await_you')%></p>
 
     <div class="flipperWrapper">
         <div class="slickContainer">
@@ -15,29 +16,29 @@
                 <div>
                     <%= image_tag("visit/guyAmongCans.jpg", alt: "Среди бочек") %>
                     <div class="slickTextContainer">
-                        <h3>Антон Ребизов</h3>
-                        <p>Член команды Uppa Winery</p>
+                        <h3> <%= t('static.visit.picture_1_header') %></h3>
+                        <p> <%= t('static.visit.picture_1_desc')%></p>
                     </div>
                 </div>
                 <div>
                     <%= image_tag("visit/can.jpg", alt: "Бочка с вином") %>
                     <div class="slickTextContainer">
-                        <h3>Pinot Noir</h3>
-                        <p>Осенью</p>
+                        <h3> <%= t('static.visit.picture_2_header') %></h3>
+                        <p> <%= t('static.visit.picture_2_desc')%></p>
                     </div>
                 </div>
                 <div>
                     <%= image_tag("visit/collectingGrape.jpg", alt: "Сбор винограда") %>
                     <div class="slickTextContainer">
-                        <h3>Uppa Winery</h3>
-                        <p>Cler Numullite</p>
+                        <h3> <%= t('static.visit.picture_3_header') %></h3>
+                        <p> <%= t('static.visit.picture_3_desc')%></p>
                     </div>
                 </div>
                 <div>
                     <%= image_tag("about/pavel.jpg", alt: "Павел Швец") %>
                     <div class="slickTextContainer">
-                        <h3>Павел Швец</h3>
-                        <p>Основатель винодельни</p>
+                        <h3> <%= t('static.visit.picture_4_header') %></h3>
+                        <p> <%= t('static.visit.picture_4_desc')%></p>
                     </div>
                 </div>
             </div>
@@ -45,8 +46,8 @@
         </div>
 
         <div class="visitButtonsContainer">
-            <a href="mailto:info@uppawine.com"><div class="sendRequest buttonVisit">отправить заявку<div class="arrowSmallRight"></div></div></a>
-            <a href="/contacts"><div class="goToContacts buttonVisit">контакты<div class="arrowSmallRight"></div></div></a>
+            <a href="mailto:info@uppawine.com"><div class="sendRequest buttonVisit"> <%= t('static.visit.send_request') %> <div class="arrowSmallRight"></div></div></a>
+            <a href="/contacts"><div class="goToContacts buttonVisit"> <%= t('static.visit.contacts') %> <div class="arrowSmallRight"></div></div></a>
         </div>
     </div>
 

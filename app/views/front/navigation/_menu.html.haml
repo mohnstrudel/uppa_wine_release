@@ -7,29 +7,35 @@
     .listItemsWrapper
       %ul
         %li.listItem
-          %a{:href => "/wines"} Вина
+          =link_to t('menu.wines'), vintages_path
           .arrowBig
         %li.listItem
-          %a{:href => "/terra"} Терруар
+          =link_to t('menu.terra'), terra_path
           .arrowBig
         %li.listItem
-          %a{:href => "/about"} О винодельне
+          =link_to t('menu.about'), about_path
           .arrowBig
         %li.listItem
-          %a{:href => "/technology"} Технология
+          =link_to t('menu.technology'), technology_path
           .arrowBig
         %li.listItem
-          %a{:href => "/club"} Клуб UPPA
+          =link_to t('menu.club'), club_path
           .arrowBig
     .menuFooter
       .contactsWrapper
         %ul
           %li.contactItem
-            %a{:href => "/contacts"} Контакты
+            =link_to t('menu.contacts'), contacts_path
             .arrowSmall
           %li.contactItem
-            %a{:href => "/visit"} Организация визита
+            =link_to t('menu.visit'), visit_path
             .arrowSmall
+          %li.contactItem
+            =link_to "ENG ", locale: 'en'
+            =link_to "/ RU / ", locale: 'ru'
+            =link_to "CN", locale: 'cn'
+            
+
       .socialWrapper
         -if @setting.instagram.present?
           %a.instagram{:href => "#{@setting.instagram}"}

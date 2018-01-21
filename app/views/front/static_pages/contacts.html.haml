@@ -2,40 +2,40 @@
 
 .contactsOuterWrapper
   .contactsInnerWrapper
-    %a.toContacts{:href => "#"} контакты
-    %h2.headerCommon Как добраться?
+    %a.toContacts{:href => "#"}=t('static.contacts.toContacts')
+    %h2.headerCommon=t('static.contacts.how_to_get_there')
     
-    %h3.titleCommon отдел продаж
+    %h3.titleCommon=t('static.contacts.sales_department')
     %p.descriptionCommon="#{link_to @setting.sales_phone, 'tel:'+@clean_sales_phone} - #{@setting.sales_name}".html_safe
     %p.descriptionCommon=link_to @setting.sales_email, "mailto:#{@setting.sales_email}".html_safe
     
-    %h3.titleCommon визит на виноградник
+    %h3.titleCommon=t('static.contacts.visit')
     %p.descriptionCommon="#{link_to @setting.visit_phone, 'tel:'+@clean_visit_phone} - #{@setting.visit_name}".html_safe
     %p.descriptionCommon=link_to @setting.visit_email, "mailto:#{@setting.visit_email}".html_safe
     
-    %h3.titleCommon адрес виноградника
+    %h3.titleCommon=t('static.contacts.address')
     %p.descriptionCommon=@setting.address.try(:html_safe)
-    %h3.titleCommon gps координаты
+    %h3.titleCommon=t('static.contacts.gps')
     %p.descriptionCommon N 44 33 676
     %p.descriptionCommon E 33 45 182
     
-    %h3.titleCommon почтовый адрес
+    %h3.titleCommon=t('static.contacts.postal')
     %p.descriptionCommon=@setting.post_address.try(:html_safe)
     
     %a{:href => "https://goo.gl/maps/i9bAEjpwgLL2"}
       .showMap
-        показать на карте
+        =t('static.contacts.show_map')
         .arrowSmallRight
 
     .aboutButtonsWrapper
-      %a{:href => root_url+'logo.eps', target: "_blank"}
+      =link_to root_url+'logo.eps', target: "_blank" do
         .downloadLogo.aboutButton
-          Скачать логотип
+          =t('static.contacts.download_logo')
           .arrowSmallRight
-    .wannaVisit Хотите организовать визит?
-    %a{:href => "/visit"}
+    .wannaVisit=t('static.contacts.orginize_visit')
+    =link_to visit_path do
       .knowMore
-        узнать больше
+        =t('static.contacts.knowMore')
         .arrowSmallRight
     .footerContacts
       %p.UPPA © UPPA by Pavel Shvets
