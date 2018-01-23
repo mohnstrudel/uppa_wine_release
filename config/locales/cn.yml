@@ -1,4 +1,155 @@
 cn:
+  menu:
+    wines: 葡萄酒
+    terra: 葡萄酒庄风土条件
+    about: 葡萄酒庄介绍
+    technology: 生物动物学
+    club: UPPA俱乐部
+    contacts: 联系方式
+
+    visit: 安排庄园游览
+    to_catalog: 查目录
+    about_technology: 工艺简介
+
   static:
     about:
-      title: Ho Shi Mihn
+      title: 葡萄酒庄介绍
+      headerCommon: 欢迎光临UPPA！
+      descriptionCommon_1: 欢迎光临我们UPPAWINERY的网站！我们葡萄酒庄是个规模不大的庄园，由一群志同道合的朋友组成，气氛和睦。
+      descriptionCommon_2: 我们从事葡萄种植业和葡萄酒酿制兼有环保和慎微观念。我们葡萄酒表现尤为突出塞瓦斯托坡尔的风土条件。
+      descriptionCommon_3: UPPA WINERY – 在鉴赏者意识中阐明克厘米亚葡萄酒的真正意义。
+      ourHistory: 我们酒庄的历史
+      descriptionCommon_4: UPPA WINERY由帕维尔·什韦茨成立于2008年。这个人对品酒和家乡有深厚的感情。这位葡萄酒酿造师生长在塞瓦斯托坡尔，在圣彼得堡和莫斯科读书。自1996年起从事品酒师工作，随着不断进步，成为俄罗斯优秀品酒师之一。2000年博得«俄罗斯最优秀品酒师»的赞扬。从首都回到家乡以后葡萄栽植者首次打造自己葡萄园。帕维尔·什韦茨对葡萄酒酿制工艺主要追求的想法是在每个葡萄酒瓶保证葡萄当地味儿和季节特殊性。
+      image_1:
+        header: 帕维尔·什韦茨
+        desc: 葡萄庄园创始人
+      image_2:
+        header: 收获
+        desc: Cler Numullite
+      image_3:
+        header: 秋季
+        desc: Cler Numullite
+      image_4:
+        header: Cabernet Sauvignon
+        desc: Cler Numullite
+      descriptionCommon_5: UPPA WINERY是俄罗斯唯一个根据生物动力学原则栽植，酿制葡萄酒的葡萄酒厂。把UPPA从鞑靼语翻译成俄语的意思是“母亲”。除此之外UPPA是流在葡萄庄园附近的一条小河的名称。鉴于塞瓦斯托坡尔的独特风土条件及UPPA凹地区域气候特点我们葡萄酒具有特殊美妙香醇的与众不同味道。“我认为帕维尔·什韦茨是葡萄酒酿制领域出众的人。他是天才。我看到由他酿制酒的过程感到很享受。哇塞！”- 罗伯特·约瑟夫，“国际葡萄挑战”葡萄酒比赛创始人和主任。UPPA WINERY 葡萄庄园总面积为十公顷，年产量约5万瓶葡萄酒。我们栽培12种葡萄并创造20多种葡萄酒。虽然我们年产量不大，但是国内真正最顶级的饭馆酒店中都显示我们的葡萄酒，成为国内国际收藏家的收藏品以及得到世界领先专家和品酒师高度认可。
+      map:
+        island: Crimea
+        city: Sevastopol
+
+    club:
+      enter: 欢迎加入我们UPPA俱乐部！
+      descriptionCommon_1: 成为我们UPPA俱乐部成员并享受优惠。UPPA葡萄酒在酿酒业界比较有名，每年分装之前大部酒量已被经营者预定。由于产量有限制我们无满足每位买方或收藏家要求。为促进直接出售我们成立UPPA WINERY俱乐部，其成员享受优先购买及优惠价格。除此之外成员会每次收到新批酒瓶进入出售的通知。
+      what_to_know: 俱乐部成员基本知识
+      know_li_1: 加入俱乐部之前须填表并发到下列邮箱地址：7557390@mail.ru   
+      know_li_2: 成员数有限，每批葡萄酒有限
+      know_li_3: 每次起订量：12瓶同一品种酒
+      know_li_4: 预付款-全款。收全款以后发货
+      know_li_5: 运输费由买方承担。请注意夏季高温度及冬季低温度损害葡萄酒质量。
+      welcome: 欢迎光临！
+      download: 下载报名表
+
+    contacts:
+      toContacts: 联系方式
+      how_to_get_there: 联系方式
+      sales_department: 销售部门
+      visit: 葡萄园游览
+      address: 葡萄庄园地址
+      gps: 全球定位系统（GPS）坐标
+      postal: 地址
+      show_map: показать на карте
+      download_logo: Скачать логотип
+      organize_visit: 愿意安排庄园导览吗？
+      knowMore: 得到更多信息
+
+    home:
+      visit: Please confirm your age
+      legal: I'm under 18
+
+    technology:
+      to_technology: 生物动物学
+      headerCommon: 生物动物学
+      descriptionCommon_1: 从打造葡萄园起我们不断采取生物动力学特殊原则。。
+      descriptionCommon_2: 我们葡萄在离不开自然和谐环境条件下栽培。无化学药物，环保态度都协助于造成自然条件，达到生态平衡。这样才会避免葡萄园里生长有害生物。葡萄园给养均衡，减小引起应激反应的因素，控制有害生物种数，进一步改善葡萄藤附近有机环境生物多样性等一系列我们农业措施。这里的葡萄属于无公害纯绿色果品
+      what_we_use: "我们农业技术简介"
+      li_1: 绿色采摘（葡萄酒会提高产量到30百公升/每公顷）
+      li_2: 葡萄最佳采收成熟度
+      li_3: 手工采收后放在10公斤盒子里
+      li_4: 把葡萄果从葡萄藤分开
+      li_5: 在橡树或不锈钢桶进行低温发酵（达到3千升）
+      li_6: 长期浸渍
+      li_7: 天然酵母
+      li_8: 硫磺最小量
+      li_9: 将酒存在228升或500升桶
+      what_we_dont_use: "我们酿制技术包括："
+      li_10: 加糖
+      li_11: 化学去酸和酸化
+      li_12: 颜色调整
+      li_13: 单宁含量调整
+      li_14: 微氧化
+      li_15: 杀菌作用
+      li_16: 加入酵母追肥和天然促进剂
+      li_17: 培养酵母
+      visit: 愿意亲身游览我们葡萄庄园？
+      learn_more: 得到更多信息
+
+    terra:
+      main: 葡萄酒庄风土条件
+      descriptionCommon_1: “我们庄园以生产独特葡萄酒为目的。我在与自然和谐条件下栽种葡萄果，尽力葡萄藤成为当地生态系统部分之一”- 帕维尔·什韦茨说. UPPA WINERY葡萄园分成两部分，每部分具有特殊自然条件，因而成品味道不同。下面给大家介绍葡萄园两个部分：
+      cler_polati: Cler Polati
+      descriptionCommon_2: 这个葡萄园以地形名称命名：南坡。葡萄藤一排一排自北而南在380-410米海拔高度，因而取得阳光最多。附近乡村当地人早就发现这片地引起大量克里米亚阳光，给其起了个外号：高板床 (俄罗斯传统农舍中俄罗斯式火炉顶尚可躺人的地方).
+      area: площадь
+      area_sq: 3,1 га
+      date_of_origin: дата заложения
+      year: 2010 год
+      types_header: Сорта винограда
+      types: Мускат Блан,Мускат Оттонель, Гевюрцтраминер, Шардоне, Пино Нуар, Барбера, Неббиола, Рислинг и Кокур.
+      ground_header: Почвы
+      ground: бурые горно-лесные на карбонатных подпочвах
+      height_header: Высота над уровнем моря
+      height: 450-470м
+      sklon_header: Склон
+      sklon: в южном направлении 9-13 град
+      rows_header: Направление рядов
+      rows: строго с севера на юг
+      density_header: Плотность посадки
+      density: 5000 лоз/га
+      scheme_header: Схема посадки
+      scheme: 2х1
+      forming_header: Формировка
+      forming: одноплений Гюйо на шпалере
+      height_2_header: Высота штамба
+      height_2: 60 см
+
+      cler_nummulite: Cler Numullite
+      descriptionCommon_3: 另一葡萄园名称作为UPPAWINERY代表。货币虫古生物（起源于拉丁语Nummulus-货币） - 一种已绝灭海洋生物。在我们葡萄园土地里有其成千上万的贝壳。因此从历史角度而言很久以前（1，45亿- 1，50亿年前）此处是一片大洋。
+      descriptionCommon_4:
+      area_sq_2: 4,2 га
+      year_2: 2008 год
+      types_2: Рислинг, Пино Нуар, Совиньон Блан, Мерло и Каберне Совиньон
+      ground_2: бурые горно-лесные на карбонатных подпочвах, каменистые
+      height_3: 420-470м
+      sklon_2: 8-11 град
+      rows_2: юго-запад
+      density_2: 5000 лоз/га
+      scheme_2: 2х1
+      forming_2: одноплений Гюйо на шпалере
+      height_4: 60 см
+
+    visit:
+      title: Визит на винодельню
+      main: организация визита
+      headerCommon: 得到更多信息
+      descriptionCommon_1: 欢迎到我们葡萄庄园参观参观！
+      descriptionCommon_2: 在提前安排条件下欢迎参观我们葡萄庄园。特意为你们安排游览和品酒。请您确认好把日期，时间，客人数量之类信息发到我们邮箱info@uppawine.com或给我们打个电话：+7 (978) 259 29 79 – 亚历山大
+      we_await_you: 每年5月1日到10月1日欢迎到我们葡萄庄园亲身体会欣赏乡村美丽，游览无边无际葡萄园！
+      picture_1_header: 安东·列比索夫
+      picture_1_desc: 志同道合的人
+      picture_2_header: Pinot Noir
+      picture_2_desc: 秋季
+      picture_3_header: Uppa Winery
+      picture_3_desc: Cler Numullite
+      picture_4_header: 帕维尔
+      picture_4_desc: 什韦茨–葡萄庄园创始人
+      send_request: 申请
+      contacts: 联系方式

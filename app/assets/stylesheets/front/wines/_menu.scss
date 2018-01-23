@@ -47,9 +47,9 @@
                     margin-left: 7px;
 
                     background-image: asset-url('arrow/arrow_big.svg');
-                    
+
                     animation: slide 0.3s;
-                    
+
                     @keyframes slide {
                         0% {
                             margin-left: 4px;
@@ -100,7 +100,7 @@
                     margin-left: 5px;
 
                     background-image: asset-url('arrow/arrow_small.svg');
-                    
+
                     animation: slide 0.3s;
 
                     @keyframes slide {
@@ -113,6 +113,13 @@
 
                 .contactItem:hover > a {
                     color: #fff;
+                }
+                .contactItemLanguage a:hover  {
+                    color: #fff;
+                }
+                .contactItemLanguage  {
+                    margin-top: 5px;
+                    color: rgba(216, 216, 216, 0.3);
                 }
             }
         }

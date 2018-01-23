@@ -30,11 +30,13 @@
           %li.contactItem
             =link_to t('menu.visit'), visit_path
             .arrowSmall
-          %li.contactItem
-            =link_to "ENG ", locale: 'en'
-            =link_to "/ RU / ", locale: 'ru'
-            =link_to "CN", locale: 'cn'
-            
+          %li.contactItemLanguage
+            =link_to "ENG  ", locale: 'en'
+            &#x2f;
+            =link_to " RU ", locale: 'ru'
+            &#x2f;
+            =link_to "  CN", locale: 'cn'
+
 
       .socialWrapper
         -if @setting.instagram.present?

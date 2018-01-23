@@ -30,6 +30,157 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  menu:
+    wines: Wines
+    terra: The Terroir
+    about: About
+    technology: Biodynamics
+    club: UPPA Club
+    contacts: Contacts
+
+    visit: Visit  us
+    to_catalog: go to the catalogue
+    about_technology: About technology
+
   static:
     about:
-      title: About winery
+      title: About us
+      headerCommon: Welcome to UPPA!
+      descriptionCommon_1: We are pleased to meet you on the official site of UPPA WINERY! Our winery is a small enterprise forming а close family and a business team.
+      descriptionCommon_2: In our work we use exclusive methods of winemaking and vine-growing which combine respect for nature and attention to detail. Our wines represent true expression of the unique Sevastopol terroir.
+      descriptionCommon_3: UPPA WINERY unveils the character of Crimean wine in perception of wine lovers.
+      ourHistory: Our history
+      descriptionCommon_4: The enterprise UPPA WINERY was founded in 2008 by Pavel Shvets, the man who is really fond of wine and loves his native land. The winemaker was born and grew up in Sevastopol city, then studied in St. Petersburg city and Moscow city. In 1996 Pavel started his working carrier as a wine steward, so, he was among the first who mastered this profession in Russia. In 2000 he was declared “The best wine steward” of the country. On his return from the capital the winemaker laid out his first vineyard in his native Sevastopol city. The basic philosophy of Pavel Shvets is terroir characteristics and uniqueness in every bottle.
+      image_1:
+        header: Pavel Shvets
+        desc: Founder of the winery
+      image_2:
+        header: Crop harvesting
+        desc: Cler Numullite
+      image_3:
+        header: In autumn
+        desc: Cler Numullite
+      image_4:
+        header: Cabernet Sauvignon
+        desc: Cler Numullite
+      descriptionCommon_5: UPPA WINERY is the only Russian winery that produces biodynamic wine. “UPPA” translated from Tatar means “Mother”. At the same time this is the name of a small river flowing nearby Rodnoye village where the wine estate is situated. Because of the unique character of Sevastopol terroir and climatic distinctions of Uppinskaya kotlovina (Russian term for Uppa hollow) our wines have truly special qualities which clearly distinguish them among the others.
+      map:
+        island: Crimea
+        city: Sevastopol
+
+    club:
+      enter: Вступайте в клуб Uppa
+      descriptionCommon_1: Станьте членом нашего винного клуба и пользуйтесь его привилегиями. Вино UPPA WINERY широко известно среди ценителей, большая его часть зарезервирована компаниями-дистрибьюторами еще до розлива. К сожалению, из-за ограниченного тиража, мы не всегда готовы предоставить необходимое количество частным покупателям и коллекционерам. Для осуществления прямых продаж мы создали клуб UPPA WINERY, члены которого имеют возможность первыми покупать вино напрямую и по специальным ценам. Также участники сообщества получают уведомления о поступлении в продажу каждой партии нашего вина.
+      what_to_know: Что нужно знать о клубе
+      know_li_1: Для вступления необходимо заполнить анкету и выслать ее по электронной почте 7557390@mail.ru  
+      know_li_2: Количество членов ограничено, как и ограничена каждая партия вина.
+      know_li_3: Минимальное количество вина при отгрузке – 12 бутылок одного наименования.
+      know_li_4: Отгрузка осуществляется после 100% предоплаты.
+      know_li_5: Услуги транспорта за Ваш счет. Важно учитывать, что летом вино можно испортить, перегрев его, а летом - переохладив.
+      welcome: Добро пожаловать!
+      download: скачать анкету
+
+    contacts:
+      toContacts: Контакты
+      how_to_get_there: Как добраться?
+      sales_department: отдел продаж
+      visit: визит на виноградник
+      address: адрес виноградника
+      gps: gps координаты
+      postal: почтовый адрес
+      show_map: показать на карте
+      download_logo: Download logo
+      organize_visit: Хотите организовать визит?
+      knowMore: узнать больше
+
+    home:
+      visit: Please confirm your age
+      legal: I'm under 18
+
+    technology:
+      to_technology: ТЕХНОЛОГИЯ
+      headerCommon: Biodynamics
+      descriptionCommon_1: From the very moment of our vineyards layout we follow the special principles of biodynamics.
+      descriptionCommon_2: Our vineyards are grown in harmony with surrounding nature. Our careful attitude to nature and non-use of pesticides allow to form natural environment and ecological balance in order to defend the vineyard of pest’s outbreaks. Our agricultural methods are characterized by some special features. They provide balanced vine nutrition, decreasing influence of stress factors, monitoring of species composition of potential pests, increasing biological diversity at the vineyard.
+      what_we_use: "Вот что мы используем:"
+      li_1: Зеленый сбор (итоговый выход вина  около 30 гл/га)
+      li_2: Идеальная  зрелость винограда 
+      li_3: Ручной сбор в ящики до  10 кг
+      li_4: Ручная сортировка гроздей и ягод 
+      li_5: Низкотемпературное брожение в дубе или стали до 3000 л
+      li_6: Продолжительная мацерация 
+      li_7: Натуральные дрожжи
+      li_8: Минимальные дозы серы
+      li_9: Выдержка в 228 и 500 л. бочках
+      what_we_dont_use: "That’s what we do not use:"
+      li_10: Chaptalisation
+      li_11: Chemical deoxidation and acidification  
+      li_12: Colour correction
+      li_13: Tannin content correction
+      li_14: Microoxidation
+      li_15: Pasteurization
+      li_16: Yeast nutrition and stimulating substances addition
+      li_17: Pure culture yeast
+      visit: WOULD YOU LIKE TO ORGANIZE A VIZIT?
+      learn_more: READ MORE
+
+    terra:
+      main: терруар
+      descriptionCommon_1: “The main idea of our winery is to make the wine unique. I grow grape in harmony with the environment and do my best to make our vines to become a part of the ecosystem in which they were brought”, - these are the Pavel Svets words. The UPPA WINERY vineyards are divided into two parts. Each of these parts is characterized by special natural features that allow creating very much different wines.
+      cler_polati: Cler Polati
+      descriptionCommon_2: This vineyard owes its name to the location on the southern slope. Rows are orientated from the north to the south at a height of 380-410 meters above sea level. Such exposition allows catching maximum of warmth and light. Long ago people from nearest villages noticed how this site is heated by Crimean sun and called it “Polati” in a similar way to an upper deck of a Russian stove.
+      area: площадь
+      area_sq: 3,1 га
+      date_of_origin: дата заложения
+      year: 2010 год
+      types_header: Сорта винограда
+      types: Мускат Блан,Мускат Оттонель, Гевюрцтраминер, Шардоне, Пино Нуар, Барбера, Неббиола, Рислинг и Кокур.
+      ground_header: Почвы
+      ground: бурые горно-лесные на карбонатных подпочвах
+      height_header: Высота над уровнем моря
+      height: 450-470м
+      sklon_header: Склон
+      sklon: в южном направлении 9-13 град
+      rows_header: Направление рядов
+      rows: строго с севера на юг
+      density_header: Плотность посадки
+      density: 5000 лоз/га
+      scheme_header: Схема посадки
+      scheme: 2х1
+      forming_header: Формировка
+      forming: одноплений Гюйо на шпалере
+      height_2_header: Высота штамба
+      height_2: 60 см
+
+      cler_nummulite: Cler Numullite
+      descriptionCommon_3: The name of this vineyard refers directly to the UPPA WINERY terroir. Nummulite (from the Latin word “numus” that means “coin”) is a genus of extinct sea organisms. A plenty of shells of such organisms are found at the vineyard. This points to the fact that our parent material used to be an ocean floor in relatively recent geological time (about 145-450 million years ago).
+      descriptionCommon_4:
+      area_sq_2: 4,2 га
+      year_2: 2008 год
+      types_2: Рислинг, Пино Нуар, Совиньон Блан, Мерло и Каберне Совиньон
+      ground_2: бурые горно-лесные на карбонатных подпочвах, каменистые
+      height_3: 420-470м
+      sklon_2: 8-11 град
+      rows_2: юго-запад
+      density_2: 5000 лоз/га
+      scheme_2: 2х1
+      forming_2: одноплений Гюйо на шпалере
+      height_4: 60 см
+
+    visit:
+      title: Визит на винодельню
+      main: организация визита
+      headerCommon: We are looking forward to seeing you at our winery!
+      descriptionCommon_1: You can visit our winery by prior arrangement. We invite you to make a walking tour around the winery and to taste wine.
+      descriptionCommon_2:  Accomplish this by sending an email with request, including time, date, number of visitors and contact information to info@uppawine.com or call us at +7972592979 (Alexandra).
+      we_await_you: We are ready to welcome you from the 1st of May to the 1st of October.
+      picture_1_header: Anton Rebizov
+      picture_1_desc: Team member
+      picture_2_header: Pinot Noir
+      picture_2_desc: In autumn
+      picture_3_header: Uppa Winery
+      picture_3_desc: Cler Numullite
+      picture_4_header: Pavel Shvets
+      picture_4_desc: founder of the winery
+      send_request: Send a request
+      contacts: Contacts
