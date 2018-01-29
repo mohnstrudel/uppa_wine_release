@@ -57,14 +57,14 @@ cn:
       address: 葡萄庄园地址
       gps: 全球定位系统（GPS）坐标
       postal: 地址
-      show_map: показать на карте
-      download_logo: Скачать логотип
+      show_map: 俯视图
+      download_logo: 下载商标
       organize_visit: 愿意安排庄园导览吗？
       knowMore: 得到更多信息
 
     home:
-      visit: Please confirm your age
-      legal: I'm under 18
+      visit: 网站访客要证明年龄
+      legal: 我已经十八岁
 
     technology:
       to_technology: 生物动物学
@@ -98,43 +98,43 @@ cn:
       descriptionCommon_1: “我们庄园以生产独特葡萄酒为目的。我在与自然和谐条件下栽种葡萄果，尽力葡萄藤成为当地生态系统部分之一”- 帕维尔·什韦茨说. UPPA WINERY葡萄园分成两部分，每部分具有特殊自然条件，因而成品味道不同。下面给大家介绍葡萄园两个部分：
       cler_polati: Cler Polati
       descriptionCommon_2: 这个葡萄园以地形名称命名：南坡。葡萄藤一排一排自北而南在380-410米海拔高度，因而取得阳光最多。附近乡村当地人早就发现这片地引起大量克里米亚阳光，给其起了个外号：高板床 (俄罗斯传统农舍中俄罗斯式火炉顶尚可躺人的地方).
-      area: площадь
-      area_sq: 3,1 га
-      date_of_origin: дата заложения
-      year: 2010 год
-      types_header: Сорта винограда
-      types: Мускат Блан,Мускат Оттонель, Гевюрцтраминер, Шардоне, Пино Нуар, Барбера, Неббиола, Рислинг и Кокур.
-      ground_header: Почвы
-      ground: бурые горно-лесные на карбонатных подпочвах
-      height_header: Высота над уровнем моря
-      height: 450-470м
-      sklon_header: Склон
-      sklon: в южном направлении 9-13 град
-      rows_header: Направление рядов
-      rows: строго с севера на юг
-      density_header: Плотность посадки
-      density: 5000 лоз/га
-      scheme_header: Схема посадки
-      scheme: 2х1
-      forming_header: Формировка
-      forming: одноплений Гюйо на шпалере
-      height_2_header: Высота штамба
-      height_2: 60 см
+      area: 面积
+      area_sq: 3，1公顷
+      date_of_origin: 葡萄园打造日期
+      year: 2010年
+      types_header: 葡萄品种
+      types: 白麝香葡萄，奥托奈麝香葡萄，琼瑶浆，莎当妮（霞多丽），黑比诺，巴贝拉干红葡萄，内比奥罗，雷司令，可口葡萄
+      ground_header: 土壤分类
+      ground: 含碳酸盐底土的山森林褐土
+      height_header: 海拔高度
+      height: 450-470米
+      sklon_header: 山坡
+      sklon: 山坡角度9-13度，朝南
+      rows_header: 葡萄行方向
+      rows: 自北垂直向南
+      density_header: 葡萄藤密度
+      density: 5000葡萄藤/公顷
+      scheme_header: 葡萄藤种植图
+      scheme: 2*1
+      forming_header: 整枝
+      forming: 单居由式在葡萄架上
+      height_2_header: 主干高度
+      height_2: 60厘米
 
       cler_nummulite: Cler Numullite
       descriptionCommon_3: 另一葡萄园名称作为UPPAWINERY代表。货币虫古生物（起源于拉丁语Nummulus-货币） - 一种已绝灭海洋生物。在我们葡萄园土地里有其成千上万的贝壳。因此从历史角度而言很久以前（1，45亿- 1，50亿年前）此处是一片大洋。
       descriptionCommon_4:
-      area_sq_2: 4,2 га
-      year_2: 2008 год
-      types_2: Рислинг, Пино Нуар, Совиньон Блан, Мерло и Каберне Совиньон
-      ground_2: бурые горно-лесные на карбонатных подпочвах, каменистые
-      height_3: 420-470м
-      sklon_2: 8-11 град
-      rows_2: юго-запад
-      density_2: 5000 лоз/га
-      scheme_2: 2х1
-      forming_2: одноплений Гюйо на шпалере
-      height_4: 60 см
+      area_sq_2: 4，2公顷
+      year_2: 2008年
+      types_2: 雷司令，黑比诺，白苏维翁，梅洛葡萄，赤霞珠 （卡本內蘇維翁
+      ground_2: 含碳酸盐底土的山森林褐土，岩土
+      height_3: 420-470米
+      sklon_2: 角度8-11度
+      rows_2: 往西南方向
+      density_2: 5000葡萄藤/公顷
+      scheme_2: 2*1
+      forming_2: 单居由式在葡萄架上
+      height_4: 60厘米
 
     visit:
       title: Визит на винодельню

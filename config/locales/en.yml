@@ -71,47 +71,47 @@ en:
     club:
       enter: Join the Uppa Club!
       descriptionCommon_1: Join our Wine Club and enjoy its benefits. UPPA WINERY wine is widely known among connoisseurs and the major part of it is reserved by distributing companies prior to bottling. We’re sorry to tell you that due to a limited edition we are not always ready to provide required quantity to individual customers and collectors. For the purpose of direct selling we have created the UPPA WINERY Club. So, its members have an opportunity to buy the wine first, directly and at special prices. Also, members of the community receive notifications about availability of every batch of our wine.
-      what_to_know: Что нужно знать о клубе
+      what_to_know: About the Club
       know_li_1: To enter the Club you should fill up the form and send it by email to 7557390@mail.ru    
       know_li_2: Both membership and each batch of wine are limited.  
       know_li_3: Outgoing minimum quantity of wine makes 12 bottles of the same item.  
       know_li_4: Dispatch is performed after 100% advance payment.
-      know_li_5: Услуги транспорта за Ваш счет. Важно учитывать, что летом вино можно испортить, перегрев его, а летом - переохладив.
-      welcome: Добро пожаловать!
-      download: скачать анкету
+      know_li_5: Delivery is at your expense. It is important to bear in mind that in summer wine could be spoiled due to overheat, and in winter — due to overcooling.
+      welcome: Welcome!
+      download: Download form
 
     contacts:
-      toContacts: Контакты
-      how_to_get_there: Как добраться?
-      sales_department: отдел продаж
-      visit: визит на виноградник
-      address: адрес виноградника
-      gps: gps координаты
-      postal: почтовый адрес
-      show_map: показать на карте
+      toContacts: Contacts
+      how_to_get_there: Directions
+      sales_department: SALES OFFICE
+      visit: TO VISIT THE VINEYARD
+      address: VINEYARD ADDRESS
+      gps: GPS COORDINATES
+      postal: POSTAL ADDRESS
+      show_map: On map
       download_logo: Download logo
-      organize_visit: Хотите организовать визит?
-      knowMore: узнать больше
+      organize_visit: Would you like to arrange a visit?
+      knowMore: More information
 
     home:
       visit: Please confirm your age
       legal: I'm under 18
 
     technology:
-      to_technology: ТЕХНОЛОГИЯ
+      to_technology: Technology
       headerCommon: Biodynamics
       descriptionCommon_1: From the very moment of our vineyards layout we follow the special principles of biodynamics.
       descriptionCommon_2: Our vineyards are grown in harmony with surrounding nature. Our careful attitude to nature and non-use of pesticides allow to form natural environment and ecological balance in order to defend the vineyard of pest’s outbreaks. Our agricultural methods are characterized by some special features. They provide balanced vine nutrition, decreasing influence of stress factors, monitoring of species composition of potential pests, increasing biological diversity at the vineyard.
-      what_we_use: "Вот что мы используем:"
-      li_1: Зеленый сбор (итоговый выход вина  около 30 гл/га)
-      li_2: Идеальная  зрелость винограда 
-      li_3: Ручной сбор в ящики до  10 кг
-      li_4: Ручная сортировка гроздей и ягод 
-      li_5: Низкотемпературное брожение в дубе или стали до 3000 л
-      li_6: Продолжительная мацерация 
-      li_7: Натуральные дрожжи
-      li_8: Минимальные дозы серы
-      li_9: Выдержка в 228 и 500 л. бочках
+      what_we_use: "THAT’S WHAT WE USE:"
+      li_1: Green harvest (total wine output about 30 hl/ha)  
+      li_2: The best level of fruit ripeness 
+      li_3: Manual harvesting into boxes of up to 10 kg
+      li_4: Manual sorting of bunches and berries 
+      li_5: Low-temperature fermentation in oak or steel tanks with volume of up to 3000
+      li_6: Long term maceration 
+      li_7: Natural yeast
+      li_8: Minimum doses of sulfur
+      li_9: Aging of wine in barrels of 228 and 500 l
       what_we_dont_use: "That’s what we do not use:"
       li_10: Chaptalisation
       li_11: Chemical deoxidation and acidification  
@@ -129,43 +129,43 @@ en:
       descriptionCommon_1: “The main idea of our winery is to make the wine unique. I grow grape in harmony with the environment and do my best to make our vines to become a part of the ecosystem in which they were brought”, - these are the Pavel Svets words. The UPPA WINERY vineyards are divided into two parts. Each of these parts is characterized by special natural features that allow creating very much different wines.
       cler_polati: Cler Polati
       descriptionCommon_2: This vineyard owes its name to the location on the southern slope. Rows are orientated from the north to the south at a height of 380-410 meters above sea level. Such exposition allows catching maximum of warmth and light. Long ago people from nearest villages noticed how this site is heated by Crimean sun and called it “Polati” in a similar way to an upper deck of a Russian stove.
-      area: площадь
-      area_sq: 3,1 га
-      date_of_origin: дата заложения
-      year: 2010 год
-      types_header: Сорта винограда
-      types: Мускат Блан,Мускат Оттонель, Гевюрцтраминер, Шардоне, Пино Нуар, Барбера, Неббиола, Рислинг и Кокур.
-      ground_header: Почвы
-      ground: бурые горно-лесные на карбонатных подпочвах
-      height_header: Высота над уровнем моря
-      height: 450-470м
-      sklon_header: Склон
-      sklon: в южном направлении 9-13 град
-      rows_header: Направление рядов
-      rows: строго с севера на юг
-      density_header: Плотность посадки
-      density: 5000 лоз/га
-      scheme_header: Схема посадки
+      area: Area size
+      area_sq: 3,1 ha
+      date_of_origin: Year of lay out
+      year: 2010
+      types_header: VINEGRAPE VARIETIES
+      types: Muscat Blanc, Muscat Ottonel, Gewürztraminer, Chardonnay, Pinot Noir, Barbera, Nebbiolo, Riesling and Kokour.
+      ground_header: SOILS
+      ground: Brown mountain forest soils on carbonated undersoils
+      height_header: ALTITUDE ABOVE SEA LEVEL
+      height: 450-470 m
+      sklon_header: SLOPE
+      sklon: 9-13 degrees southward
+      rows_header: ROW DIRECTION
+      rows: accurately from north to south
+      density_header: DENSITY OF PLANTING
+      density: 5000 vines/ha
+      scheme_header: PLANTING PATTERN
       scheme: 2х1
-      forming_header: Формировка
-      forming: одноплений Гюйо на шпалере
-      height_2_header: Высота штамба
-      height_2: 60 см
+      forming_header: TRAINING SYSTEM
+      forming: single Guyot trellis system
+      height_2_header: TRUNK HEIGHT
+      height_2: 60 cm
 
       cler_nummulite: Cler Numullite
       descriptionCommon_3: The name of this vineyard refers directly to the UPPA WINERY terroir. Nummulite (from the Latin word “numus” that means “coin”) is a genus of extinct sea organisms. A plenty of shells of such organisms are found at the vineyard. This points to the fact that our parent material used to be an ocean floor in relatively recent geological time (about 145-450 million years ago).
       descriptionCommon_4:
-      area_sq_2: 4,2 га
-      year_2: 2008 год
-      types_2: Рислинг, Пино Нуар, Совиньон Блан, Мерло и Каберне Совиньон
-      ground_2: бурые горно-лесные на карбонатных подпочвах, каменистые
-      height_3: 420-470м
-      sklon_2: 8-11 град
-      rows_2: юго-запад
-      density_2: 5000 лоз/га
+      area_sq_2: 4,2 ha
+      year_2: 2008
+      types_2: Riesling, Pinot Noir, Sauvignon Blanc, Merlot and Cabernet Sauvignon
+      ground_2: brown mountain forest soil on carbonated undersoils, stony soils
+      height_3: 420-470 m
+      sklon_2: 8-11 degrees
+      rows_2: south-west
+      density_2: 5000 vines/ha
       scheme_2: 2х1
-      forming_2: одноплений Гюйо на шпалере
-      height_4: 60 см
+      forming_2: single Guyot trellis system
+      height_4: 60 сm
 
     visit:
       title: Визит на винодельню
